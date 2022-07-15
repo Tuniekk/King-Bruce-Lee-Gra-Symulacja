@@ -1,0 +1,15 @@
+digraph "PIERWSZAPROBA/gracz.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PIERWSZAPROBA/gracz.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Plik naglowkowy modulu Gracz."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PIERWSZAPROBA/gra.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gra_8h.html",tooltip="Plik naglowkowy modulu Gra."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PIERWSZAPROBA/gra.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gra_8cpp.html",tooltip="Plik cpp modulu Gra."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PIERWSZAPROBA/kingBruceLee.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$king_bruce_lee_8cpp.html",tooltip="Plik cpp modulu kingBruceLee."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PIERWSZAPROBA/gracz.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gracz_8cpp.html",tooltip="Plik cpp modulu Gracz."];
+}

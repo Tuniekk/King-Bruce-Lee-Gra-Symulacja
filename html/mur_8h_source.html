@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/mur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mur_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef MUR_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MUR_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8h.html">obiekt.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_mur.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mur.html">CMur</a> :<span class="keyword">public</span> <a class="code" href="class_c_przeszkoda.html">CPrzeszkoda</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> inicjujZmienne(<span class="keywordtype">int</span> sz, <span class="keywordtype">int</span> wys, <span class="keywordtype">int</span> wx, <span class="keywordtype">int</span> wy, <span class="keywordtype">int</span> z, <span class="keywordtype">string</span> i);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> inicjujModel();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_c_mur.html#ab9d7a4c0aa279d0bc9ebc4fee74a7409">CMur</a>(<span class="keywordtype">int</span> sz = 30, <span class="keywordtype">int</span> wys = 300, <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">x</a> = 600, <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">y</a> = 150, <span class="keywordtype">int</span> z = 3, <span class="keywordtype">string</span> i = <span class="stringliteral">&quot;Mur&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_c_mur.html#a42c9dd04947a6374687d057b147e15a5">~CMur</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mur.html#acceb47f1756125ed4f963c09d74444fc">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mur.html#a1a0b50850e53eea4ede6c3a1fad5177b">render</a>(sf::RenderTarget* target);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif //MUR_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_obiekt_html_a468d7fd079cff08eaea0979c47f3b6a0"><div class="ttname"><a href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">CObiekt::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Poczatkowa wspolrzedna Y obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:38</div></div>
+<div class="ttc" id="aclass_c_mur_html"><div class="ttname"><a href="class_c_mur.html">CMur</a></div><div class="ttdef"><b>Definition:</b> mur.h:13</div></div>
+<div class="ttc" id="aclass_c_mur_html_a1a0b50850e53eea4ede6c3a1fad5177b"><div class="ttname"><a href="class_c_mur.html#a1a0b50850e53eea4ede6c3a1fad5177b">CMur::render</a></div><div class="ttdeci">void render(sf::RenderTarget *target)</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z przeszkoda (model itp).</div><div class="ttdef"><b>Definition:</b> mur.cpp:46</div></div>
+<div class="ttc" id="aclass_c_przeszkoda_html"><div class="ttname"><a href="class_c_przeszkoda.html">CPrzeszkoda</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:215</div></div>
+<div class="ttc" id="aobiekt_8h_html"><div class="ttname"><a href="obiekt_8h.html">obiekt.h</a></div><div class="ttdoc">Plik naglowkowy modulu Obiekt.</div></div>
+<div class="ttc" id="aclass_c_mur_html_acceb47f1756125ed4f963c09d74444fc"><div class="ttname"><a href="class_c_mur.html#acceb47f1756125ed4f963c09d74444fc">CMur::przyjmijObrazenia</a></div><div class="ttdeci">void przyjmijObrazenia(int liczbaObrazen)</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen przeszkodzie (np. po dostaniu atakiem)</div><div class="ttdef"><b>Definition:</b> mur.cpp:38</div></div>
+<div class="ttc" id="aclass_c_mur_html_ab9d7a4c0aa279d0bc9ebc4fee74a7409"><div class="ttname"><a href="class_c_mur.html#ab9d7a4c0aa279d0bc9ebc4fee74a7409">CMur::CMur</a></div><div class="ttdeci">CMur(int sz=30, int wys=300, int x=600, int y=150, int z=3, string i=&quot;Mur&quot;)</div><div class="ttdef"><b>Definition:</b> mur.cpp:27</div></div>
+<div class="ttc" id="aclass_c_mur_html_a42c9dd04947a6374687d057b147e15a5"><div class="ttname"><a href="class_c_mur.html#a42c9dd04947a6374687d057b147e15a5">CMur::~CMur</a></div><div class="ttdeci">~CMur()</div><div class="ttdef"><b>Definition:</b> mur.cpp:33</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a76de83c57d6539d180f228f5304bb543"><div class="ttname"><a href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">CObiekt::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">Poczatkowa wspolrzedna X obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:36</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

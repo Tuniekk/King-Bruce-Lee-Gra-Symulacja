@@ -1,0 +1,1313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Dokumentacja klasy CWojownik</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
+<a href="class_c_wojownik-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy CWojownik<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="obiekt_8h_source.html">obiekt.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla CWojownik</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_wojownik__inherit__graph.png" border="0" usemap="#_c_wojownik_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla CWojownik:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_wojownik__coll__graph.png" border="0" usemap="#_c_wojownik_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a11f5c058acf2a67e39d43740e16b0fb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a11f5c058acf2a67e39d43740e16b0fb5">liczCzas</a> ()=0</td></tr>
+<tr class="memdesc:a11f5c058acf2a67e39d43740e16b0fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odliczajaca czas od ostatniego uzycia poszczegolnych atakow. Odliczanie zatrzymuje sie na wartosciach rowncyh cooldownom poszczegolnych atakow, co oznacza, ze dane ataki mozna ponownie wykonac.  <a href="class_c_wojownik.html#a11f5c058acf2a67e39d43740e16b0fb5">Więcej...</a><br /></td></tr>
+<tr class="separator:a11f5c058acf2a67e39d43740e16b0fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8eb2feb7c1c457270701e452033843"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#aee8eb2feb7c1c457270701e452033843">wykryjKolizjeZOknem</a> (const sf::RenderTarget *okno)=0</td></tr>
+<tr class="memdesc:aee8eb2feb7c1c457270701e452033843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wykrywajaca kolizje z ramammi okna.  <a href="class_c_wojownik.html#aee8eb2feb7c1c457270701e452033843">Więcej...</a><br /></td></tr>
+<tr class="separator:aee8eb2feb7c1c457270701e452033843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72fd702eeb45489824e9461afa646be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ad72fd702eeb45489824e9461afa646be">wykryjKolizjeZObiektami</a> (std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt; obiekty)=0</td></tr>
+<tr class="memdesc:ad72fd702eeb45489824e9461afa646be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wykrywajaca kolizje z innymi obiektami na planszy.  <a href="class_c_wojownik.html#ad72fd702eeb45489824e9461afa646be">Więcej...</a><br /></td></tr>
+<tr class="separator:ad72fd702eeb45489824e9461afa646be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0128c6d6eecbbe23287f297e597fae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#afe0128c6d6eecbbe23287f297e597fae">atakPiescia</a> (bool wykonajAtak)=0</td></tr>
+<tr class="memdesc:afe0128c6d6eecbbe23287f297e597fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodajaca piesc do wektora piesci.  <a href="class_c_wojownik.html#afe0128c6d6eecbbe23287f297e597fae">Więcej...</a><br /></td></tr>
+<tr class="separator:afe0128c6d6eecbbe23287f297e597fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7601383d17aa52a1082279f66dcecc16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a7601383d17aa52a1082279f66dcecc16">ruchPiescia</a> (const sf::RenderTarget *okno, std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt; cele)=0</td></tr>
+<tr class="memdesc:a7601383d17aa52a1082279f66dcecc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odpowiadajaca za poruszanie sie piesci oraz wykrywanie ich kolizji z innymi obiektami.  <a href="class_c_wojownik.html#a7601383d17aa52a1082279f66dcecc16">Więcej...</a><br /></td></tr>
+<tr class="separator:a7601383d17aa52a1082279f66dcecc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc47faa4103c9e99e76973b656fa5df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a9dc47faa4103c9e99e76973b656fa5df">kopniecie</a> (bool wykonajAtak)=0</td></tr>
+<tr class="memdesc:a9dc47faa4103c9e99e76973b656fa5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodajaca noge do wektora nogi.  <a href="class_c_wojownik.html#a9dc47faa4103c9e99e76973b656fa5df">Więcej...</a><br /></td></tr>
+<tr class="separator:a9dc47faa4103c9e99e76973b656fa5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afd99bffa3c446074abd1bc9ea21d06"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a0afd99bffa3c446074abd1bc9ea21d06">ruchKopniecia</a> (const sf::RenderTarget *okno, std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt; cele)=0</td></tr>
+<tr class="memdesc:a0afd99bffa3c446074abd1bc9ea21d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odpowiadajaca za poruszanie sie nog oraz wykrywanie ich kolizji z innymi obiektami.  <a href="class_c_wojownik.html#a0afd99bffa3c446074abd1bc9ea21d06">Więcej...</a><br /></td></tr>
+<tr class="separator:a0afd99bffa3c446074abd1bc9ea21d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5684b06b1fa923df2c00087925e18ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ab5684b06b1fa923df2c00087925e18ea">atakSpecjalny</a> (bool wykonajAtak)=0</td></tr>
+<tr class="memdesc:ab5684b06b1fa923df2c00087925e18ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wywolujaca atak specjalny (np. rzut szurikenem lub rozpoczecie czasu premii).  <a href="class_c_wojownik.html#ab5684b06b1fa923df2c00087925e18ea">Więcej...</a><br /></td></tr>
+<tr class="separator:ab5684b06b1fa923df2c00087925e18ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf320468c07c9e24bde44b62ee1d882"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#abcf320468c07c9e24bde44b62ee1d882">ruchAtakuSpecjalnego</a> (const sf::RenderTarget *okno, std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt; cele)=0</td></tr>
+<tr class="memdesc:abcf320468c07c9e24bde44b62ee1d882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odpowiadajaca za poruszanie sie atakow specjalnych lub odliczanie czasu ich trwania.  <a href="class_c_wojownik.html#abcf320468c07c9e24bde44b62ee1d882">Więcej...</a><br /></td></tr>
+<tr class="separator:abcf320468c07c9e24bde44b62ee1d882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5f3144a6b7e321ff30a7da4073d88c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a6e5f3144a6b7e321ff30a7da4073d88c">chodzenie</a> (char stronaRuchu)=0</td></tr>
+<tr class="memdesc:a6e5f3144a6b7e321ff30a7da4073d88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odpowiadajaca za poruszanie sie postaci oraz jej atakow.  <a href="class_c_wojownik.html#a6e5f3144a6b7e321ff30a7da4073d88c">Więcej...</a><br /></td></tr>
+<tr class="separator:a6e5f3144a6b7e321ff30a7da4073d88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed3990a3e660651ebc8cee795f9489a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#abed3990a3e660651ebc8cee795f9489a">update</a> (const sf::RenderTarget *okno, std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt; obiekty)=0</td></tr>
+<tr class="memdesc:abed3990a3e660651ebc8cee795f9489a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odpowiadajaca za samodzielne zachowywanie sie wojownika.  <a href="class_c_wojownik.html#abed3990a3e660651ebc8cee795f9489a">Więcej...</a><br /></td></tr>
+<tr class="separator:abed3990a3e660651ebc8cee795f9489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f1e8309b4d2ee391f52075b8c0c261"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#af9f1e8309b4d2ee391f52075b8c0c261">renderAtakPiescia</a> (sf::RenderTarget *okno)=0</td></tr>
+<tr class="memdesc:af9f1e8309b4d2ee391f52075b8c0c261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietlanie ataku piescia wojownika.  <a href="class_c_wojownik.html#af9f1e8309b4d2ee391f52075b8c0c261">Więcej...</a><br /></td></tr>
+<tr class="separator:af9f1e8309b4d2ee391f52075b8c0c261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2be376b006a3cf05a5cf42141e15cb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#af2be376b006a3cf05a5cf42141e15cb7">renderKopniecie</a> (sf::RenderTarget *okno)=0</td></tr>
+<tr class="memdesc:af2be376b006a3cf05a5cf42141e15cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietlanie kopniecia wojownika.  <a href="class_c_wojownik.html#af2be376b006a3cf05a5cf42141e15cb7">Więcej...</a><br /></td></tr>
+<tr class="separator:af2be376b006a3cf05a5cf42141e15cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b36188dd01aea2ac65d239da7f61bfb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a0b36188dd01aea2ac65d239da7f61bfb">przyjmijObrazenia</a> (int liczbaObrazen)=0</td></tr>
+<tr class="memdesc:a0b36188dd01aea2ac65d239da7f61bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen wojownikowi (np. po dostaniu atakiem)  <a href="class_c_wojownik.html#a0b36188dd01aea2ac65d239da7f61bfb">Więcej...</a><br /></td></tr>
+<tr class="separator:a0b36188dd01aea2ac65d239da7f61bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f64fd2d632952787981f5ccccc167b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a1f64fd2d632952787981f5ccccc167b4">render</a> (sf::RenderTarget *target)=0</td></tr>
+<tr class="memdesc:a1f64fd2d632952787981f5ccccc167b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietlanie wszystkich rzeczy zwiazanych z wojownikiem (ataki, model itp).  <a href="class_c_wojownik.html#a1f64fd2d632952787981f5ccccc167b4">Więcej...</a><br /></td></tr>
+<tr class="separator:a1f64fd2d632952787981f5ccccc167b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_obiekt')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_c_obiekt.html">CObiekt</a></td></tr>
+<tr class="memitem:ae8b5f2d190e77e742e752cdb25aaeafb inherit pub_methods_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#ae8b5f2d190e77e742e752cdb25aaeafb">zwrocImie</a> ()</td></tr>
+<tr class="memdesc:ae8b5f2d190e77e742e752cdb25aaeafb inherit pub_methods_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">//Funkcja zwracajaca imie obiektu  <a href="class_c_obiekt.html#ae8b5f2d190e77e742e752cdb25aaeafb">Więcej...</a><br /></td></tr>
+<tr class="separator:ae8b5f2d190e77e742e752cdb25aaeafb inherit pub_methods_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee5b16b3731598112ae47218f74c6f9 inherit pub_methods_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a3ee5b16b3731598112ae47218f74c6f9">zwrocZdrowie</a> ()</td></tr>
+<tr class="memdesc:a3ee5b16b3731598112ae47218f74c6f9 inherit pub_methods_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">//Funkcja zwracajaca liczbe punktow zdrowia  <a href="class_c_obiekt.html#a3ee5b16b3731598112ae47218f74c6f9">Więcej...</a><br /></td></tr>
+<tr class="separator:a3ee5b16b3731598112ae47218f74c6f9 inherit pub_methods_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0eec5f1c12423002eb9b081a1f8dd89 inherit pub_methods_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#ad0eec5f1c12423002eb9b081a1f8dd89">zwrocSzerokosc</a> ()</td></tr>
+<tr class="memdesc:ad0eec5f1c12423002eb9b081a1f8dd89 inherit pub_methods_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">//Funkcja zwracajaca szerokosc obiektu  <a href="class_c_obiekt.html#ad0eec5f1c12423002eb9b081a1f8dd89">Więcej...</a><br /></td></tr>
+<tr class="separator:ad0eec5f1c12423002eb9b081a1f8dd89 inherit pub_methods_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff752f2bf36942c0b540b893d07e7013 inherit pub_methods_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#aff752f2bf36942c0b540b893d07e7013">zwrocWysokosc</a> ()</td></tr>
+<tr class="memdesc:aff752f2bf36942c0b540b893d07e7013 inherit pub_methods_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">//Funkcja zwracajaca wysokosc obiektu  <a href="class_c_obiekt.html#aff752f2bf36942c0b540b893d07e7013">Więcej...</a><br /></td></tr>
+<tr class="separator:aff752f2bf36942c0b540b893d07e7013 inherit pub_methods_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:ac1f36c3accaa0c045d2b055cd9b9e2c7"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ac1f36c3accaa0c045d2b055cd9b9e2c7">obliczDystans</a> (sf::FloatRect wojownik, sf::FloatRect obiekt)=0</td></tr>
+<tr class="memdesc:ac1f36c3accaa0c045d2b055cd9b9e2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja liczaca dystans miedzy wojownikiem, a danym obiektem.  <a href="class_c_wojownik.html#ac1f36c3accaa0c045d2b055cd9b9e2c7">Więcej...</a><br /></td></tr>
+<tr class="separator:ac1f36c3accaa0c045d2b055cd9b9e2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
+<tr class="memitem:ae95fbd703deaac10393b28dfc3f1fcb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ae95fbd703deaac10393b28dfc3f1fcb4">cooldownAtakuPiescia</a></td></tr>
+<tr class="memdesc:ae95fbd703deaac10393b28dfc3f1fcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc czasu jaka trzeba odczekac pomiedzy kolejnymi atakami piesciami.  <a href="class_c_wojownik.html#ae95fbd703deaac10393b28dfc3f1fcb4">Więcej...</a><br /></td></tr>
+<tr class="separator:ae95fbd703deaac10393b28dfc3f1fcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0d5675f27e41b16c54e8881961bf8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#aaf0d5675f27e41b16c54e8881961bf8a">czasDoAtakuPiescia</a></td></tr>
+<tr class="memdesc:aaf0d5675f27e41b16c54e8881961bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc czasu, jaka minela od ostatniego ataku piescia (jezeli == cooldownAtakuPiescia to mozna ponownie zaatakowac piescia)  <a href="class_c_wojownik.html#aaf0d5675f27e41b16c54e8881961bf8a">Więcej...</a><br /></td></tr>
+<tr class="separator:aaf0d5675f27e41b16c54e8881961bf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17a8cfb99fa55a369028996003f1b10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ab17a8cfb99fa55a369028996003f1b10">cooldownKopniecia</a></td></tr>
+<tr class="memdesc:ab17a8cfb99fa55a369028996003f1b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc czasu jaka trzeba odczekac pomiedzy kolejnymi kopnieciami.  <a href="class_c_wojownik.html#ab17a8cfb99fa55a369028996003f1b10">Więcej...</a><br /></td></tr>
+<tr class="separator:ab17a8cfb99fa55a369028996003f1b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b580dfb7a2fd13511c2df85c0b8459"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a20b580dfb7a2fd13511c2df85c0b8459">czasKopniecia</a></td></tr>
+<tr class="memdesc:a20b580dfb7a2fd13511c2df85c0b8459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc czasu, jaka minela od ostatniego kopniecia (jezeli == cooldownAtakuPiescia to mozna ponownie uzyc kopniecia)  <a href="class_c_wojownik.html#a20b580dfb7a2fd13511c2df85c0b8459">Więcej...</a><br /></td></tr>
+<tr class="separator:a20b580dfb7a2fd13511c2df85c0b8459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1707fb8dd49444c79215d471928509"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a4b1707fb8dd49444c79215d471928509">cooldownAtakuSpecjalnego</a></td></tr>
+<tr class="memdesc:a4b1707fb8dd49444c79215d471928509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc czasu jaka trzeba odczekac pomiedzy atakami specjalnymi.  <a href="class_c_wojownik.html#a4b1707fb8dd49444c79215d471928509">Więcej...</a><br /></td></tr>
+<tr class="separator:a4b1707fb8dd49444c79215d471928509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac515408de7cda93e2093fd60dc2bfacb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ac515408de7cda93e2093fd60dc2bfacb">czasDoAtakuSpecjalnego</a></td></tr>
+<tr class="memdesc:ac515408de7cda93e2093fd60dc2bfacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc czasu, jaka minela od ostatniego ataku specjalnego (jezeli == cooldownAtakuPiescia to mozna ponownie zaatakowac specjalnie)  <a href="class_c_wojownik.html#ac515408de7cda93e2093fd60dc2bfacb">Więcej...</a><br /></td></tr>
+<tr class="separator:ac515408de7cda93e2093fd60dc2bfacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4166b14903fda1ce12da7403d37fe35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ac4166b14903fda1ce12da7403d37fe35">szybkosc</a></td></tr>
+<tr class="memdesc:ac4166b14903fda1ce12da7403d37fe35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Szybkosc, z jaka wojownik porusza sie po planszy.  <a href="class_c_wojownik.html#ac4166b14903fda1ce12da7403d37fe35">Więcej...</a><br /></td></tr>
+<tr class="separator:ac4166b14903fda1ce12da7403d37fe35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063b5405e6c5ea4cb7c91ad53d031e50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a063b5405e6c5ea4cb7c91ad53d031e50">sila</a></td></tr>
+<tr class="memdesc:a063b5405e6c5ea4cb7c91ad53d031e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc obrazen, jakie sa zadawane atakami (wartosci moga byc dzielone lub mnozone w zaleznosci od ataku)  <a href="class_c_wojownik.html#a063b5405e6c5ea4cb7c91ad53d031e50">Więcej...</a><br /></td></tr>
+<tr class="separator:a063b5405e6c5ea4cb7c91ad53d031e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0d0c1e4d9ceef799f3db348d9d7438"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a4d0d0c1e4d9ceef799f3db348d9d7438">xKierunek</a> = 0</td></tr>
+<tr class="memdesc:a4d0d0c1e4d9ceef799f3db348d9d7438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kierunek w osi X, w jaka jest odwrocony wojownik (=-1 jesli wojownik jest odwrocony w lewo, =1 jesli w prawo)  <a href="class_c_wojownik.html#a4d0d0c1e4d9ceef799f3db348d9d7438">Więcej...</a><br /></td></tr>
+<tr class="separator:a4d0d0c1e4d9ceef799f3db348d9d7438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97bfd8bf3dfd565f232878358d68ac3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ab97bfd8bf3dfd565f232878358d68ac3">yKierunek</a> = 1</td></tr>
+<tr class="memdesc:ab97bfd8bf3dfd565f232878358d68ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kierunek w osi Y, w jaka jest odwrocony wojownik (=-1 jesli wojownik jest odwrocony w gore, =1 jesli w dol)  <a href="class_c_wojownik.html#ab97bfd8bf3dfd565f232878358d68ac3">Więcej...</a><br /></td></tr>
+<tr class="separator:ab97bfd8bf3dfd565f232878358d68ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdf8876cd768842cdb3cc1c77ae3bc3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a7fdf8876cd768842cdb3cc1c77ae3bc3">predkoscPiesci</a> = 0.3</td></tr>
+<tr class="memdesc:a7fdf8876cd768842cdb3cc1c77ae3bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predkosc, z jaka porusza sie piesc wojownika.  <a href="class_c_wojownik.html#a7fdf8876cd768842cdb3cc1c77ae3bc3">Więcej...</a><br /></td></tr>
+<tr class="separator:a7fdf8876cd768842cdb3cc1c77ae3bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6098d4e3837325c474b6c665d43d93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#aff6098d4e3837325c474b6c665d43d93">predkoscNogi</a> = 0.3</td></tr>
+<tr class="memdesc:aff6098d4e3837325c474b6c665d43d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predkosc, z jaka porusza sie noga wojownika.  <a href="class_c_wojownik.html#aff6098d4e3837325c474b6c665d43d93">Więcej...</a><br /></td></tr>
+<tr class="separator:aff6098d4e3837325c474b6c665d43d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832c26e9b06070b2592c7e6f1243856d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; sf::RectangleShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a832c26e9b06070b2592c7e6f1243856d">piesci</a></td></tr>
+<tr class="memdesc:a832c26e9b06070b2592c7e6f1243856d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor przechowywujacy wszystkie piesci.  <a href="class_c_wojownik.html#a832c26e9b06070b2592c7e6f1243856d">Więcej...</a><br /></td></tr>
+<tr class="separator:a832c26e9b06070b2592c7e6f1243856d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d834c6a35b8250f646a70c97f814fa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; sf::RectangleShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a74d834c6a35b8250f646a70c97f814fa">nogi</a></td></tr>
+<tr class="memdesc:a74d834c6a35b8250f646a70c97f814fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor przechowywujacy wszystkie nogi.  <a href="class_c_wojownik.html#a74d834c6a35b8250f646a70c97f814fa">Więcej...</a><br /></td></tr>
+<tr class="separator:a74d834c6a35b8250f646a70c97f814fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f02ffcc2480473777e0e5a3985f2e9"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a63f02ffcc2480473777e0e5a3985f2e9">xKierunkiPiesci</a></td></tr>
+<tr class="memdesc:a63f02ffcc2480473777e0e5a3985f2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor kierunkow w osi X, w jaka sa odwrocone piesci.  <a href="class_c_wojownik.html#a63f02ffcc2480473777e0e5a3985f2e9">Więcej...</a><br /></td></tr>
+<tr class="separator:a63f02ffcc2480473777e0e5a3985f2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538da03d41752a8f34610739e29accf8"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a538da03d41752a8f34610739e29accf8">yKierunkiPiesci</a></td></tr>
+<tr class="memdesc:a538da03d41752a8f34610739e29accf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor kierunkow w osi Y, w jaka sa odwrocone piesci.  <a href="class_c_wojownik.html#a538da03d41752a8f34610739e29accf8">Więcej...</a><br /></td></tr>
+<tr class="separator:a538da03d41752a8f34610739e29accf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c4cf3b7b5c43b74de8d085c9d8163f"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#a82c4cf3b7b5c43b74de8d085c9d8163f">xKierunkiNog</a></td></tr>
+<tr class="memdesc:a82c4cf3b7b5c43b74de8d085c9d8163f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor kierunkow w osi X, w jaka sa odwrocone nogi.  <a href="class_c_wojownik.html#a82c4cf3b7b5c43b74de8d085c9d8163f">Więcej...</a><br /></td></tr>
+<tr class="separator:a82c4cf3b7b5c43b74de8d085c9d8163f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ac6c6a59f1474b09c4369f5654402a"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wojownik.html#ad2ac6c6a59f1474b09c4369f5654402a">yKierunkiNog</a></td></tr>
+<tr class="memdesc:ad2ac6c6a59f1474b09c4369f5654402a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor kierunkow w osi Y, w jaka sa odwrocone nog.  <a href="class_c_wojownik.html#ad2ac6c6a59f1474b09c4369f5654402a">Więcej...</a><br /></td></tr>
+<tr class="separator:ad2ac6c6a59f1474b09c4369f5654402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_c_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_obiekt')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="class_c_obiekt.html">CObiekt</a></td></tr>
+<tr class="memitem:a56cbab5f0efd308bf9e613dca3b9fbd3 inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a56cbab5f0efd308bf9e613dca3b9fbd3">imie</a></td></tr>
+<tr class="memdesc:a56cbab5f0efd308bf9e613dca3b9fbd3 inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nazwa obiektu.  <a href="class_c_obiekt.html#a56cbab5f0efd308bf9e613dca3b9fbd3">Więcej...</a><br /></td></tr>
+<tr class="separator:a56cbab5f0efd308bf9e613dca3b9fbd3 inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76de83c57d6539d180f228f5304bb543 inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">x</a></td></tr>
+<tr class="memdesc:a76de83c57d6539d180f228f5304bb543 inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poczatkowa wspolrzedna X obiektu.  <a href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">Więcej...</a><br /></td></tr>
+<tr class="separator:a76de83c57d6539d180f228f5304bb543 inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468d7fd079cff08eaea0979c47f3b6a0 inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">y</a></td></tr>
+<tr class="memdesc:a468d7fd079cff08eaea0979c47f3b6a0 inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poczatkowa wspolrzedna Y obiektu.  <a href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">Więcej...</a><br /></td></tr>
+<tr class="separator:a468d7fd079cff08eaea0979c47f3b6a0 inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193ef64306fd00bbfc6e7ceb296dd3ab inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a193ef64306fd00bbfc6e7ceb296dd3ab">wytrzymalosc</a></td></tr>
+<tr class="memdesc:a193ef64306fd00bbfc6e7ceb296dd3ab inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc obraze� blokowanych.  <a href="class_c_obiekt.html#a193ef64306fd00bbfc6e7ceb296dd3ab">Więcej...</a><br /></td></tr>
+<tr class="separator:a193ef64306fd00bbfc6e7ceb296dd3ab inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c852f8ccf8657f4a4094561ba99032 inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a04c852f8ccf8657f4a4094561ba99032">zdrowie</a></td></tr>
+<tr class="memdesc:a04c852f8ccf8657f4a4094561ba99032 inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilosc punktow zdrowia. Jezeli bedzie mniejsze lub rowne zero, to obiekt zostaje usuniety (obecnie tylko wojownicy traca zdrowie, jednak mozna stworzyc przeszkody, ktore bedzie mozna niszczyc)  <a href="class_c_obiekt.html#a04c852f8ccf8657f4a4094561ba99032">Więcej...</a><br /></td></tr>
+<tr class="separator:a04c852f8ccf8657f4a4094561ba99032 inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4cdd9bed92efca2156ce1e0078e76b inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a3b4cdd9bed92efca2156ce1e0078e76b">szerokosc</a></td></tr>
+<tr class="memdesc:a3b4cdd9bed92efca2156ce1e0078e76b inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Szerokosc obiektu.  <a href="class_c_obiekt.html#a3b4cdd9bed92efca2156ce1e0078e76b">Więcej...</a><br /></td></tr>
+<tr class="separator:a3b4cdd9bed92efca2156ce1e0078e76b inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c37ebf3252e0ec713e6e63eaba6fab8 inherit pro_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a5c37ebf3252e0ec713e6e63eaba6fab8">wysokosc</a></td></tr>
+<tr class="memdesc:a5c37ebf3252e0ec713e6e63eaba6fab8 inherit pro_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wysokosc obiektu.  <a href="class_c_obiekt.html#a5c37ebf3252e0ec713e6e63eaba6fab8">Więcej...</a><br /></td></tr>
+<tr class="separator:a5c37ebf3252e0ec713e6e63eaba6fab8 inherit pro_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_c_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_c_obiekt')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="class_c_obiekt.html">CObiekt</a></td></tr>
+<tr class="memitem:a151721da59648e41274d1ce360a40d3a inherit pub_attribs_class_c_obiekt"><td class="memItemLeft" align="right" valign="top">sf::RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_obiekt.html#a151721da59648e41274d1ce360a40d3a">model</a></td></tr>
+<tr class="memdesc:a151721da59648e41274d1ce360a40d3a inherit pub_attribs_class_c_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model obiektu.  <a href="class_c_obiekt.html#a151721da59648e41274d1ce360a40d3a">Więcej...</a><br /></td></tr>
+<tr class="separator:a151721da59648e41274d1ce360a40d3a inherit pub_attribs_class_c_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="afe0128c6d6eecbbe23287f297e597fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe0128c6d6eecbbe23287f297e597fae">&#9670;&nbsp;</a></span>atakPiescia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::atakPiescia </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wykonajAtak</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja dodajaca piesc do wektora piesci. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wykonajAtak</td><td>zmienna, ktora wywoluje sie funkcje (dla == 1 funkcja zostaje wywolana). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a32dd5ca126cdd5ae792d0515cfe75b4b">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#ae73fdf73f62fa9c2a56230f8f777c2a3">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#ad7c5ff446416ee0d56b9eed49433636f">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="ab5684b06b1fa923df2c00087925e18ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5684b06b1fa923df2c00087925e18ea">&#9670;&nbsp;</a></span>atakSpecjalny()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::atakSpecjalny </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wykonajAtak</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja wywolujaca atak specjalny (np. rzut szurikenem lub rozpoczecie czasu premii). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wykonajAtak</td><td>zmienna, ktora wywoluje sie funkcje (dla == 1 funkcja zostaje wywolana). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#ad38b9e1617005049bdd5bd83ba7de8c0">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a89fad98b431f808068ba0ecfc43a6dc2">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#ad0b8ffc9eedfeb1ae7ef4adf945a3525">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a6e5f3144a6b7e321ff30a7da4073d88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5f3144a6b7e321ff30a7da4073d88c">&#9670;&nbsp;</a></span>chodzenie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::chodzenie </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>stronaRuchu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja odpowiadajaca za poruszanie sie postaci oraz jej atakow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stronaRuchu</td><td>Zmienna uzywana w intrukcji switch wewnatrz funkcji, w zaleznosci od podanej wartosci postac oraz ataki ruszaja sie w jedna z czterech stron. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a392c93e87bea6c390086d0783fd391fc">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a571d0312917e2fb3fdbec43e1611ee84">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#aabd7149937689da69e3042a6f6fd57ba">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a9dc47faa4103c9e99e76973b656fa5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc47faa4103c9e99e76973b656fa5df">&#9670;&nbsp;</a></span>kopniecie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::kopniecie </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wykonajAtak</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja dodajaca noge do wektora nogi. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wykonajAtak</td><td>zmienna, ktora wywoluje sie funkcje (dla == 1 funkcja zostaje wywolana). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a4238afaa2b5a9ec3ade881de44934182">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a259589c8acd9cf28b3f7230c4f04c0f0">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a03f7f2cd8d6428779f55039830b17ceb">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a11f5c058acf2a67e39d43740e16b0fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f5c058acf2a67e39d43740e16b0fb5">&#9670;&nbsp;</a></span>liczCzas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::liczCzas </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja odliczajaca czas od ostatniego uzycia poszczegolnych atakow. Odliczanie zatrzymuje sie na wartosciach rowncyh cooldownom poszczegolnych atakow, co oznacza, ze dane ataki mozna ponownie wykonac. </p>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a0b4c6dfabcf07008bf4a218797efe979">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#ac2aef1c1ce1aa321d3b0b8fc83f6dbd5">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a415c96cd06e51a5c47f8b6cd1b4dfec1">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="ac1f36c3accaa0c045d2b055cd9b9e2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f36c3accaa0c045d2b055cd9b9e2c7">&#9670;&nbsp;</a></span>obliczDystans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float CWojownik::obliczDystans </td>
+          <td>(</td>
+          <td class="paramtype">sf::FloatRect&#160;</td>
+          <td class="paramname"><em>wojownik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::FloatRect&#160;</td>
+          <td class="paramname"><em>obiekt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja liczaca dystans miedzy wojownikiem, a danym obiektem. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wojownik</td><td>Wspolrzedne wojownika, od ktorych liczony jest dystans. </td></tr>
+    <tr><td class="paramname">obiekt</td><td>Wspolrzedne obiektu do ktorego liczony jest dystans. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a4787afc47da31cc994811645b527dc2c">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a22c42db625ecedf64f78c067c6887731">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a329b01b2db201d9c13cda67689c45fee">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a0b36188dd01aea2ac65d239da7f61bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b36188dd01aea2ac65d239da7f61bfb">&#9670;&nbsp;</a></span>przyjmijObrazenia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::przyjmijObrazenia </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>liczbaObrazen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>//Wirtualna funkcja odpowiadajaca za zadawanie obrazen wojownikowi (np. po dostaniu atakiem) </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">liczbaObrazen</td><td>Liczba obrazen zadawanych przez np. atak (zazwyczaj sila wojownika pomnozona przez jakis wspolczynnik). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementuje <a class="el" href="class_c_obiekt.html#ac74cf9dfca5f89c325c973127de1189e">CObiekt</a>.</p>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a5610cf7a2fcb6d509f0e964055da6e08">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#afb40d42e97c393cd42fafd1e2e15c478">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#ae4ac5bb5fc4f7bd66c9c45e60667cc0b">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a1f64fd2d632952787981f5ccccc167b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f64fd2d632952787981f5ccccc167b4">&#9670;&nbsp;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::render </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wyswietlanie wszystkich rzeczy zwiazanych z wojownikiem (ataki, model itp). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>miejsce, gdzie sa wyswietlane rzeczy zwiazane z wojownikiem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementuje <a class="el" href="class_c_obiekt.html#ac6f54265bc89554012a66ea110fcb240">CObiekt</a>.</p>
+
+<p>Implementowany w <a class="el" href="class_c_bruce_lee.html#a1dd5db7a7e741a059098c7bf1b75af93">CBruceLee</a>, <a class="el" href="class_c_karate_kid.html#a5017bf9173f390784b945ebaa52e8db4">CKarateKid</a> i <a class="el" href="class_c_jackie_chan.html#aa33a70b1077d52722d3061e29b41d0ae">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="af9f1e8309b4d2ee391f52075b8c0c261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f1e8309b4d2ee391f52075b8c0c261">&#9670;&nbsp;</a></span>renderAtakPiescia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::renderAtakPiescia </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wyswietlanie ataku piescia wojownika. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>miejsce, gdzie jest wyswietlany atak piescia. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a0cd8e74569518a793d06a26400dca8a6">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#ade8023bd49976de68a73d8666cca7d46">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#af4f1010c8d1ef4369f8a86216a97714f">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="af2be376b006a3cf05a5cf42141e15cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2be376b006a3cf05a5cf42141e15cb7">&#9670;&nbsp;</a></span>renderKopniecie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::renderKopniecie </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wyswietlanie kopniecia wojownika. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>miejsce, gdzie jest wyswietlane kopniecie. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a66c49af08797cc935879ff9dc3502262">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#ac53b51a99caeef9482531eb22057068f">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a2bc147483da9f20b22a8fcb64cf48dd0">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="abcf320468c07c9e24bde44b62ee1d882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf320468c07c9e24bde44b62ee1d882">&#9670;&nbsp;</a></span>ruchAtakuSpecjalnego()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::ruchAtakuSpecjalnego </td>
+          <td>(</td>
+          <td class="paramtype">const sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt;&#160;</td>
+          <td class="paramname"><em>cele</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja odpowiadajaca za poruszanie sie atakow specjalnych lub odliczanie czasu ich trwania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>miejsce, gdzie atak specjalny ma miejsce (plansza). </td></tr>
+    <tr><td class="paramname">cele</td><td>lista obiektow, z ktorymi ataki specjalne wykrywaja kolizje (lista obiektow na planszy). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#ad9d6f34356f474d6303f5d47d0b176b4">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a835ab497cbe9a7d1c56d650a7068f82b">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#ad7f3b2264acb7ecce318fc9ac6e41678">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a0afd99bffa3c446074abd1bc9ea21d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afd99bffa3c446074abd1bc9ea21d06">&#9670;&nbsp;</a></span>ruchKopniecia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::ruchKopniecia </td>
+          <td>(</td>
+          <td class="paramtype">const sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt;&#160;</td>
+          <td class="paramname"><em>cele</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja odpowiadajaca za poruszanie sie nog oraz wykrywanie ich kolizji z innymi obiektami. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>miejsce, gdzie kopniecie ma miejsce (plansza). </td></tr>
+    <tr><td class="paramname">cele</td><td>lista obiektow, z ktorymi nogi wykrywaja kolizje (lista obiektow na planszy). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#aa66d3f50a35e74cda751d90010c24290">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a808b3c6628ad8632d6619571d709f910">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a65428644ad165802be00e3478415d7f5">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="a7601383d17aa52a1082279f66dcecc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7601383d17aa52a1082279f66dcecc16">&#9670;&nbsp;</a></span>ruchPiescia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::ruchPiescia </td>
+          <td>(</td>
+          <td class="paramtype">const sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt;&#160;</td>
+          <td class="paramname"><em>cele</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja odpowiadajaca za poruszanie sie piesci oraz wykrywanie ich kolizji z innymi obiektami. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>miejsce, gdzie atak piescia ma miejsce (plansza). </td></tr>
+    <tr><td class="paramname">cele</td><td>lista obiektow, z ktorymi piesci wykrywaja kolizje (lista obiektow na planszy). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a3be0620d99f8597643b981b9db730acf">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a7810379c8187d5a44eef12fff52a5de2">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a0d3f8b152cf31113d53e7a49b27a45f6">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="abed3990a3e660651ebc8cee795f9489a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed3990a3e660651ebc8cee795f9489a">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::update </td>
+          <td>(</td>
+          <td class="paramtype">const sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt;&#160;</td>
+          <td class="paramname"><em>obiekty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja odpowiadajaca za samodzielne zachowywanie sie wojownika. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>Plansza, na ktorej zachodzi aktualizacja wojownika (np. poruszanie sie). </td></tr>
+    <tr><td class="paramname">obiekty</td><td>Lista obiektow, z ktorymi wojownikyou moze wchodzic w interakcje (blokowowac sie o nie, atakowac itp.). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a6c0c1265a6a4d9ab83185cf94fafb2ce">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#ae8ebf5933a4ede54f8745dc9e10f5b61">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a041aa341b94384cb177743a0c23c79de">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="ad72fd702eeb45489824e9461afa646be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72fd702eeb45489824e9461afa646be">&#9670;&nbsp;</a></span>wykryjKolizjeZObiektami()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::wykryjKolizjeZObiektami </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_c_obiekt.html">CObiekt</a> * &gt;&#160;</td>
+          <td class="paramname"><em>obiekty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja wykrywajaca kolizje z innymi obiektami na planszy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obiekty</td><td>Lista obiektow, z ktorymi jest wykrywana kolizja. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#a1423ad1f2010fe61becd04370cee9322">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#a82cfa5491d0e6631b476352e6226949a">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#a14f9cb2472d99c3fd42ce4e41540611a">CJackieChan</a>.</p>
+
+</div>
+</div>
+<a id="aee8eb2feb7c1c457270701e452033843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8eb2feb7c1c457270701e452033843">&#9670;&nbsp;</a></span>wykryjKolizjeZOknem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CWojownik::wykryjKolizjeZOknem </td>
+          <td>(</td>
+          <td class="paramtype">const sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>okno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja wykrywajaca kolizje z ramammi okna. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*okno</td><td>Okno (plansza), z jaka jest wykrywana kolizja. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementowany w <a class="el" href="class_c_karate_kid.html#ab6450043202e1d5649992b6e9d1e4228">CKarateKid</a>, <a class="el" href="class_c_bruce_lee.html#ae2a630bcc6fedb9ebbf4e3028e4de83c">CBruceLee</a> i <a class="el" href="class_c_jackie_chan.html#ab24a132b324c9fb8187fb6abf2d01c05">CJackieChan</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ae95fbd703deaac10393b28dfc3f1fcb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95fbd703deaac10393b28dfc3f1fcb4">&#9670;&nbsp;</a></span>cooldownAtakuPiescia</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::cooldownAtakuPiescia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc czasu jaka trzeba odczekac pomiedzy kolejnymi atakami piesciami. </p>
+
+</div>
+</div>
+<a id="a4b1707fb8dd49444c79215d471928509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1707fb8dd49444c79215d471928509">&#9670;&nbsp;</a></span>cooldownAtakuSpecjalnego</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::cooldownAtakuSpecjalnego</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc czasu jaka trzeba odczekac pomiedzy atakami specjalnymi. </p>
+
+</div>
+</div>
+<a id="ab17a8cfb99fa55a369028996003f1b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17a8cfb99fa55a369028996003f1b10">&#9670;&nbsp;</a></span>cooldownKopniecia</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::cooldownKopniecia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc czasu jaka trzeba odczekac pomiedzy kolejnymi kopnieciami. </p>
+
+</div>
+</div>
+<a id="aaf0d5675f27e41b16c54e8881961bf8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0d5675f27e41b16c54e8881961bf8a">&#9670;&nbsp;</a></span>czasDoAtakuPiescia</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::czasDoAtakuPiescia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc czasu, jaka minela od ostatniego ataku piescia (jezeli == cooldownAtakuPiescia to mozna ponownie zaatakowac piescia) </p>
+
+</div>
+</div>
+<a id="ac515408de7cda93e2093fd60dc2bfacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac515408de7cda93e2093fd60dc2bfacb">&#9670;&nbsp;</a></span>czasDoAtakuSpecjalnego</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::czasDoAtakuSpecjalnego</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc czasu, jaka minela od ostatniego ataku specjalnego (jezeli == cooldownAtakuPiescia to mozna ponownie zaatakowac specjalnie) </p>
+
+</div>
+</div>
+<a id="a20b580dfb7a2fd13511c2df85c0b8459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b580dfb7a2fd13511c2df85c0b8459">&#9670;&nbsp;</a></span>czasKopniecia</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::czasKopniecia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc czasu, jaka minela od ostatniego kopniecia (jezeli == cooldownAtakuPiescia to mozna ponownie uzyc kopniecia) </p>
+
+</div>
+</div>
+<a id="a74d834c6a35b8250f646a70c97f814fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d834c6a35b8250f646a70c97f814fa">&#9670;&nbsp;</a></span>nogi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;sf::RectangleShape&gt; CWojownik::nogi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor przechowywujacy wszystkie nogi. </p>
+
+</div>
+</div>
+<a id="a832c26e9b06070b2592c7e6f1243856d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832c26e9b06070b2592c7e6f1243856d">&#9670;&nbsp;</a></span>piesci</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;sf::RectangleShape&gt; CWojownik::piesci</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor przechowywujacy wszystkie piesci. </p>
+
+</div>
+</div>
+<a id="aff6098d4e3837325c474b6c665d43d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6098d4e3837325c474b6c665d43d93">&#9670;&nbsp;</a></span>predkoscNogi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CWojownik::predkoscNogi = 0.3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Predkosc, z jaka porusza sie noga wojownika. </p>
+
+</div>
+</div>
+<a id="a7fdf8876cd768842cdb3cc1c77ae3bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdf8876cd768842cdb3cc1c77ae3bc3">&#9670;&nbsp;</a></span>predkoscPiesci</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CWojownik::predkoscPiesci = 0.3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Predkosc, z jaka porusza sie piesc wojownika. </p>
+
+</div>
+</div>
+<a id="a063b5405e6c5ea4cb7c91ad53d031e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063b5405e6c5ea4cb7c91ad53d031e50">&#9670;&nbsp;</a></span>sila</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::sila</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ilosc obrazen, jakie sa zadawane atakami (wartosci moga byc dzielone lub mnozone w zaleznosci od ataku) </p>
+
+</div>
+</div>
+<a id="ac4166b14903fda1ce12da7403d37fe35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4166b14903fda1ce12da7403d37fe35">&#9670;&nbsp;</a></span>szybkosc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CWojownik::szybkosc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Szybkosc, z jaka wojownik porusza sie po planszy. </p>
+
+</div>
+</div>
+<a id="a4d0d0c1e4d9ceef799f3db348d9d7438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d0d0c1e4d9ceef799f3db348d9d7438">&#9670;&nbsp;</a></span>xKierunek</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CWojownik::xKierunek = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kierunek w osi X, w jaka jest odwrocony wojownik (=-1 jesli wojownik jest odwrocony w lewo, =1 jesli w prawo) </p>
+
+</div>
+</div>
+<a id="a82c4cf3b7b5c43b74de8d085c9d8163f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c4cf3b7b5c43b74de8d085c9d8163f">&#9670;&nbsp;</a></span>xKierunkiNog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;float&gt; CWojownik::xKierunkiNog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor kierunkow w osi X, w jaka sa odwrocone nogi. </p>
+
+</div>
+</div>
+<a id="a63f02ffcc2480473777e0e5a3985f2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f02ffcc2480473777e0e5a3985f2e9">&#9670;&nbsp;</a></span>xKierunkiPiesci</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;float&gt; CWojownik::xKierunkiPiesci</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor kierunkow w osi X, w jaka sa odwrocone piesci. </p>
+
+</div>
+</div>
+<a id="ab97bfd8bf3dfd565f232878358d68ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab97bfd8bf3dfd565f232878358d68ac3">&#9670;&nbsp;</a></span>yKierunek</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CWojownik::yKierunek = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kierunek w osi Y, w jaka jest odwrocony wojownik (=-1 jesli wojownik jest odwrocony w gore, =1 jesli w dol) </p>
+
+</div>
+</div>
+<a id="ad2ac6c6a59f1474b09c4369f5654402a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ac6c6a59f1474b09c4369f5654402a">&#9670;&nbsp;</a></span>yKierunkiNog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;float&gt; CWojownik::yKierunkiNog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor kierunkow w osi Y, w jaka sa odwrocone nog. </p>
+
+</div>
+</div>
+<a id="a538da03d41752a8f34610739e29accf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538da03d41752a8f34610739e29accf8">&#9670;&nbsp;</a></span>yKierunkiPiesci</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;float&gt; CWojownik::yKierunkiPiesci</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor kierunkow w osi Y, w jaka sa odwrocone piesci. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>PIERWSZAPROBA/<a class="el" href="obiekt_8h_source.html">obiekt.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

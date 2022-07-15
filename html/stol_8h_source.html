@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/stol.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">stol.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="stol_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STOL_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STOL_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8h.html">obiekt.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_stol.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_stol.html">CStol</a> :<span class="keyword">public</span> <a class="code" href="class_c_przeszkoda.html">CPrzeszkoda</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> inicjujZmienne(<span class="keywordtype">int</span> sz, <span class="keywordtype">int</span> wys, <span class="keywordtype">int</span> wx, <span class="keywordtype">int</span> wy, <span class="keywordtype">int</span> z, <span class="keywordtype">string</span> i);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> inicjujModel();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_c_stol.html#a58c51203f608f7161598a90d223fd654">CStol</a>(<span class="keywordtype">int</span> sz = 50, <span class="keywordtype">int</span> wys = 50, <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">x</a> = 50, <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">y</a> = 50, <span class="keywordtype">int</span> z = 3, <span class="keywordtype">string</span> i = <span class="stringliteral">&quot;Stol&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_c_stol.html#a3ec456eedc75feb72cb000ae197c66b8">~CStol</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_stol.html#a87612f92ba4a382c5b6164e4113e0412">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_stol.html#ad187ce9b6dc27d8c6948253f71e347e3">render</a>(sf::RenderTarget* target);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif //STOL_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_obiekt_html_a468d7fd079cff08eaea0979c47f3b6a0"><div class="ttname"><a href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">CObiekt::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Poczatkowa wspolrzedna Y obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:38</div></div>
+<div class="ttc" id="aclass_c_stol_html_ad187ce9b6dc27d8c6948253f71e347e3"><div class="ttname"><a href="class_c_stol.html#ad187ce9b6dc27d8c6948253f71e347e3">CStol::render</a></div><div class="ttdeci">void render(sf::RenderTarget *target)</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z przeszkoda (model itp).</div><div class="ttdef"><b>Definition:</b> stol.cpp:46</div></div>
+<div class="ttc" id="aclass_c_stol_html"><div class="ttname"><a href="class_c_stol.html">CStol</a></div><div class="ttdef"><b>Definition:</b> stol.h:17</div></div>
+<div class="ttc" id="aclass_c_przeszkoda_html"><div class="ttname"><a href="class_c_przeszkoda.html">CPrzeszkoda</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:215</div></div>
+<div class="ttc" id="aobiekt_8h_html"><div class="ttname"><a href="obiekt_8h.html">obiekt.h</a></div><div class="ttdoc">Plik naglowkowy modulu Obiekt.</div></div>
+<div class="ttc" id="aclass_c_stol_html_a58c51203f608f7161598a90d223fd654"><div class="ttname"><a href="class_c_stol.html#a58c51203f608f7161598a90d223fd654">CStol::CStol</a></div><div class="ttdeci">CStol(int sz=50, int wys=50, int x=50, int y=50, int z=3, string i=&quot;Stol&quot;)</div><div class="ttdef"><b>Definition:</b> stol.cpp:27</div></div>
+<div class="ttc" id="aclass_c_stol_html_a3ec456eedc75feb72cb000ae197c66b8"><div class="ttname"><a href="class_c_stol.html#a3ec456eedc75feb72cb000ae197c66b8">CStol::~CStol</a></div><div class="ttdeci">~CStol()</div><div class="ttdef"><b>Definition:</b> stol.cpp:33</div></div>
+<div class="ttc" id="aclass_c_stol_html_a87612f92ba4a382c5b6164e4113e0412"><div class="ttname"><a href="class_c_stol.html#a87612f92ba4a382c5b6164e4113e0412">CStol::przyjmijObrazenia</a></div><div class="ttdeci">void przyjmijObrazenia(int liczbaObrazen)</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen przeszkodzie (np. po dostaniu atakiem)</div><div class="ttdef"><b>Definition:</b> stol.cpp:38</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a76de83c57d6539d180f228f5304bb543"><div class="ttname"><a href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">CObiekt::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">Poczatkowa wspolrzedna X obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:36</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

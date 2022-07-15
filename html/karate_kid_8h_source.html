@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/karateKid.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">karateKid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="karate_kid_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef KARATEKID_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define KARATEKID_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8h.html">obiekt.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mur_8h.html">mur.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">Wojownik Karate Kid:</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">-Atak piescia oraz kopniecie standardowe.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">-Atak specjalny - przez okreslony czas wojownik otrzymuje premie do szybkosci. W tym czasie moze rowniez czesciej atakowac piescia oraz uzywac kopniecia.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">-Wojownik ten jest w stanie przechodzic przez mury. Inne przeszkody oraz wojownicy blokuja postac.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_karate_kid.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_karate_kid.html">CKarateKid</a> :<span class="keyword">public</span> <a class="code" href="class_c_wojownik.html">CWojownik</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> czasTrwaniaCyklu;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> czasObecnyCyklu; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> oryginalnaSzybkosc; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> oryginalnyCooldownAtakuPiescia; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> oryginalnyCooldownKopniecia; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> premiaAktywna;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> inicjujZmienne(<span class="keywordtype">int</span> wx, <span class="keywordtype">int</span> wy, <span class="keywordtype">string</span> i, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> sz, <span class="keywordtype">int</span> szer, <span class="keywordtype">int</span> wys, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> inicjujModel();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_karate_kid.html#aae498dc7188b06fe0481b8e4e2b7c4d1">   48</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_karate_kid.html#aae498dc7188b06fe0481b8e4e2b7c4d1">trybSterowania</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//Konstruktor i destruktor</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_c_karate_kid.html#a858c61be00af52816b26ba09cbf33e1b">CKarateKid</a>(<span class="keywordtype">int</span> wx = 800, <span class="keywordtype">int</span> wy = 300, <span class="keywordtype">string</span> i = <span class="stringliteral">&quot;Karate Kid&quot;</span>, <span class="keywordtype">int</span> z = 50, <span class="keywordtype">int</span> sz = 8, <span class="keywordtype">int</span> szer = 70, <span class="keywordtype">int</span> wys = 70, <span class="keywordtype">int</span> w = 3, <span class="keywordtype">int</span> s = 10);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_c_karate_kid.html#afdb54448a1842787cc9bbc8f9f09dcd7">~CKarateKid</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a32dd5ca126cdd5ae792d0515cfe75b4b">atakPiescia</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a3be0620d99f8597643b981b9db730acf">ruchPiescia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a4238afaa2b5a9ec3ade881de44934182">kopniecie</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#aa66d3f50a35e74cda751d90010c24290">ruchKopniecia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#ad38b9e1617005049bdd5bd83ba7de8c0">atakSpecjalny</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#ad9d6f34356f474d6303f5d47d0b176b4">ruchAtakuSpecjalnego</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a392c93e87bea6c390086d0783fd391fc">chodzenie</a>(<span class="keywordtype">char</span> stronaRuchu);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_karate_kid.html#a4787afc47da31cc994811645b527dc2c">obliczDystans</a>(sf::FloatRect wojownik, sf::FloatRect obiekt);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a0b4c6dfabcf07008bf4a218797efe979">liczCzas</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#ab6450043202e1d5649992b6e9d1e4228">wykryjKolizjeZOknem</a>(<span class="keyword">const</span> sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a1423ad1f2010fe61becd04370cee9322">wykryjKolizjeZObiektami</a>(std::vector&lt;CObiekt*&gt; obiekty);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a6c0c1265a6a4d9ab83185cf94fafb2ce">update</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; obiekty);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a5610cf7a2fcb6d509f0e964055da6e08">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a0cd8e74569518a793d06a26400dca8a6">renderAtakPiescia</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a66c49af08797cc935879ff9dc3502262">renderKopniecie</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_karate_kid.html#a5017bf9173f390784b945ebaa52e8db4">render</a>(sf::RenderTarget* target);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif //KARATEKID_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_karate_kid_html_ad9d6f34356f474d6303f5d47d0b176b4"><div class="ttname"><a href="class_c_karate_kid.html#ad9d6f34356f474d6303f5d47d0b176b4">CKarateKid::ruchAtakuSpecjalnego</a></div><div class="ttdeci">void ruchAtakuSpecjalnego(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie atakow specjalnych lub odliczanie czasu ich trwania.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:255</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a3be0620d99f8597643b981b9db730acf"><div class="ttname"><a href="class_c_karate_kid.html#a3be0620d99f8597643b981b9db730acf">CKarateKid::ruchPiescia</a></div><div class="ttdeci">void ruchPiescia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie piesci oraz wykrywanie ich kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:103</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a858c61be00af52816b26ba09cbf33e1b"><div class="ttname"><a href="class_c_karate_kid.html#a858c61be00af52816b26ba09cbf33e1b">CKarateKid::CKarateKid</a></div><div class="ttdeci">CKarateKid(int wx=800, int wy=300, string i=&quot;Karate Kid&quot;, int z=50, int sz=8, int szer=70, int wys=70, int w=3, int s=10)</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:51</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a0cd8e74569518a793d06a26400dca8a6"><div class="ttname"><a href="class_c_karate_kid.html#a0cd8e74569518a793d06a26400dca8a6">CKarateKid::renderAtakPiescia</a></div><div class="ttdeci">void renderAtakPiescia(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie ataku piescia wojownika.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:496</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a392c93e87bea6c390086d0783fd391fc"><div class="ttname"><a href="class_c_karate_kid.html#a392c93e87bea6c390086d0783fd391fc">CKarateKid::chodzenie</a></div><div class="ttdeci">void chodzenie(char stronaRuchu)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie postaci oraz jej atakow.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:267</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a0b4c6dfabcf07008bf4a218797efe979"><div class="ttname"><a href="class_c_karate_kid.html#a0b4c6dfabcf07008bf4a218797efe979">CKarateKid::liczCzas</a></div><div class="ttdeci">void liczCzas()</div><div class="ttdoc">Funkcja odliczajaca czas od ostatniego uzycia poszczegolnych atakow. Odliczanie zatrzymuje sie na war...</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:351</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_aa66d3f50a35e74cda751d90010c24290"><div class="ttname"><a href="class_c_karate_kid.html#aa66d3f50a35e74cda751d90010c24290">CKarateKid::ruchKopniecia</a></div><div class="ttdeci">void ruchKopniecia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie nog oraz wykrywanie ich kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:196</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a4787afc47da31cc994811645b527dc2c"><div class="ttname"><a href="class_c_karate_kid.html#a4787afc47da31cc994811645b527dc2c">CKarateKid::obliczDystans</a></div><div class="ttdeci">float obliczDystans(sf::FloatRect wojownik, sf::FloatRect obiekt)</div><div class="ttdoc">Funkcja liczaca dystans miedzy wojownikiem, a danym obiektem.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:346</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_aae498dc7188b06fe0481b8e4e2b7c4d1"><div class="ttname"><a href="class_c_karate_kid.html#aae498dc7188b06fe0481b8e4e2b7c4d1">CKarateKid::trybSterowania</a></div><div class="ttdeci">bool trybSterowania</div><div class="ttdoc">Zmienna przechowywujaca informacje o tym, czy postac jest sterowana przez gracza.</div><div class="ttdef"><b>Definition:</b> karateKid.h:48</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html"><div class="ttname"><a href="class_c_karate_kid.html">CKarateKid</a></div><div class="ttdef"><b>Definition:</b> karateKid.h:26</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_afdb54448a1842787cc9bbc8f9f09dcd7"><div class="ttname"><a href="class_c_karate_kid.html#afdb54448a1842787cc9bbc8f9f09dcd7">CKarateKid::~CKarateKid</a></div><div class="ttdeci">~CKarateKid()</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:57</div></div>
+<div class="ttc" id="aobiekt_8h_html"><div class="ttname"><a href="obiekt_8h.html">obiekt.h</a></div><div class="ttdoc">Plik naglowkowy modulu Obiekt.</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_ab6450043202e1d5649992b6e9d1e4228"><div class="ttname"><a href="class_c_karate_kid.html#ab6450043202e1d5649992b6e9d1e4228">CKarateKid::wykryjKolizjeZOknem</a></div><div class="ttdeci">void wykryjKolizjeZOknem(const sf::RenderTarget *okno)</div><div class="ttdoc">Funkcja wykrywajaca kolizje z ramammi okna.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:403</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a32dd5ca126cdd5ae792d0515cfe75b4b"><div class="ttname"><a href="class_c_karate_kid.html#a32dd5ca126cdd5ae792d0515cfe75b4b">CKarateKid::atakPiescia</a></div><div class="ttdeci">void atakPiescia(bool wykonajAtak)</div><div class="ttdoc">Funkcja dodajaca piesc do wektora piesci.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:62</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a4238afaa2b5a9ec3ade881de44934182"><div class="ttname"><a href="class_c_karate_kid.html#a4238afaa2b5a9ec3ade881de44934182">CKarateKid::kopniecie</a></div><div class="ttdeci">void kopniecie(bool wykonajAtak)</div><div class="ttdoc">Funkcja dodajaca noge do wektora nogi.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:145</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a66c49af08797cc935879ff9dc3502262"><div class="ttname"><a href="class_c_karate_kid.html#a66c49af08797cc935879ff9dc3502262">CKarateKid::renderKopniecie</a></div><div class="ttdeci">void renderKopniecie(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie kopniecia wojownika.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:504</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_ad38b9e1617005049bdd5bd83ba7de8c0"><div class="ttname"><a href="class_c_karate_kid.html#ad38b9e1617005049bdd5bd83ba7de8c0">CKarateKid::atakSpecjalny</a></div><div class="ttdeci">void atakSpecjalny(bool wykonajAtak)</div><div class="ttdoc">Funkcja wywolujaca atak specjalny (np. rzut szurikenem lub rozpoczecie czasu premii).</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:238</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a1423ad1f2010fe61becd04370cee9322"><div class="ttname"><a href="class_c_karate_kid.html#a1423ad1f2010fe61becd04370cee9322">CKarateKid::wykryjKolizjeZObiektami</a></div><div class="ttdeci">void wykryjKolizjeZObiektami(std::vector&lt; CObiekt * &gt; obiekty)</div><div class="ttdoc">Funkcja wykrywajaca kolizje z innymi obiektami na planszy.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:365</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a5610cf7a2fcb6d509f0e964055da6e08"><div class="ttname"><a href="class_c_karate_kid.html#a5610cf7a2fcb6d509f0e964055da6e08">CKarateKid::przyjmijObrazenia</a></div><div class="ttdeci">void przyjmijObrazenia(int liczbaObrazen)</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen wojownikowi (np. po dostaniu atakiem)</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:488</div></div>
+<div class="ttc" id="aclass_c_wojownik_html"><div class="ttname"><a href="class_c_wojownik.html">CWojownik</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:76</div></div>
+<div class="ttc" id="amur_8h_html"><div class="ttname"><a href="mur_8h.html">mur.h</a></div><div class="ttdoc">Plik naglowkowy modulu Mur.</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a5017bf9173f390784b945ebaa52e8db4"><div class="ttname"><a href="class_c_karate_kid.html#a5017bf9173f390784b945ebaa52e8db4">CKarateKid::render</a></div><div class="ttdeci">void render(sf::RenderTarget *target)</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z wojownikiem (ataki, model itp).</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:512</div></div>
+<div class="ttc" id="aclass_c_karate_kid_html_a6c0c1265a6a4d9ab83185cf94fafb2ce"><div class="ttname"><a href="class_c_karate_kid.html#a6c0c1265a6a4d9ab83185cf94fafb2ce">CKarateKid::update</a></div><div class="ttdeci">void update(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; obiekty)</div><div class="ttdoc">Funkcja odpowiadajaca za samodzielne zachowywanie sie wojownika.</div><div class="ttdef"><b>Definition:</b> karateKid.cpp:419</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

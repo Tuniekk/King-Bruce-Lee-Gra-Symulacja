@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/bruceLee.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bruceLee.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bruce_lee_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef BRUCELEE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define BRUCELEE_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8h.html">obiekt.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stol_8h.html">stol.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">Wojownik Bruce Lee:</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">-Atak piescia oraz kopniecie standardowe.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">-Atak specjalny - rzut szurikenem. Po wcisnieciu przycisku ataku specjalnego podczas ruchu wojownik wyrzuca szuriken (w ksztalcie kola) w kierunku ruchu. </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">Szuriken ten przy trafieniu w obiekt znika oraz zadaje obrazenia. Po wyrzuceniu szurikenu nalezy odczekac pewien czas, zanim mozna wyrzucic kolejny szuriken.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">Obecnie nie ma limitu szurikenow, ktore moga byc naraz na ekranie.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">-Wojownik ten jest w stanie przechodzic przez stoly. Inne przeszkody oraz wojownicy blokuja postac.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_bruce_lee.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_bruce_lee.html">CBruceLee</a> :<span class="keyword">public</span> <a class="code" href="class_c_wojownik.html">CWojownik</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> czasTrwaniaCyklu; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> czasObecnyCyklu; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;sf::CircleShape&gt; szurikeny;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    vector&lt;float&gt; xKierunkiAtakowSpecjalnych;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    vector&lt;float&gt; yKierunkiAtakowSpecjalnych;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> inicjujZmienne(<span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">y</a>, <span class="keywordtype">string</span> i, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> sz, <span class="keywordtype">int</span> szer, <span class="keywordtype">int</span> wys, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> inicjujModel();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_bruce_lee.html#a8e67f9227cfda8d6516e621db7c94afa">   47</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_bruce_lee.html#a8e67f9227cfda8d6516e621db7c94afa">trybSterowania</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//Konstruktor i destruktor</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_c_bruce_lee.html#aa026780c406b36eaf5853a1ebca4d062">CBruceLee</a>(<span class="keywordtype">int</span> wx = 200, <span class="keywordtype">int</span> wy = 200, <span class="keywordtype">string</span> i = <span class="stringliteral">&quot;Bruce Lee&quot;</span>, <span class="keywordtype">int</span> z = 60, <span class="keywordtype">int</span> sz = 6, <span class="keywordtype">int</span> szer = 100, <span class="keywordtype">int</span> wys = 100, <span class="keywordtype">int</span> w = 4, <span class="keywordtype">int</span> s = 10);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_c_bruce_lee.html#a18d76d7858995807b79da760e97308bb">~CBruceLee</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#ae73fdf73f62fa9c2a56230f8f777c2a3">atakPiescia</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a7810379c8187d5a44eef12fff52a5de2">ruchPiescia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a259589c8acd9cf28b3f7230c4f04c0f0">kopniecie</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a808b3c6628ad8632d6619571d709f910">ruchKopniecia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a89fad98b431f808068ba0ecfc43a6dc2">atakSpecjalny</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a835ab497cbe9a7d1c56d650a7068f82b">ruchAtakuSpecjalnego</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a571d0312917e2fb3fdbec43e1611ee84">chodzenie</a>(<span class="keywordtype">char</span> stronaRuchu);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_bruce_lee.html#a22c42db625ecedf64f78c067c6887731">obliczDystans</a>(sf::FloatRect wojownik, sf::FloatRect obiekt);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#ac2aef1c1ce1aa321d3b0b8fc83f6dbd5">liczCzas</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#ae2a630bcc6fedb9ebbf4e3028e4de83c">wykryjKolizjeZOknem</a>(<span class="keyword">const</span> sf::RenderTarget* okno); <span class="comment">//Funkcja rejestrujaca zderzenia postaci z krawedziami okna</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a82cfa5491d0e6631b476352e6226949a">wykryjKolizjeZObiektami</a>(std::vector&lt;CObiekt*&gt; obiekty);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#ae8ebf5933a4ede54f8745dc9e10f5b61">update</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; obiekty);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#afb40d42e97c393cd42fafd1e2e15c478">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#ade8023bd49976de68a73d8666cca7d46">renderAtakPiescia</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#ac53b51a99caeef9482531eb22057068f">renderKopniecie</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a4dcdcfe7de6ca1f0b782c74cd01a0bd5">renderSzurikeny</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bruce_lee.html#a1dd5db7a7e741a059098c7bf1b75af93">render</a>(sf::RenderTarget* target);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif //BRUCELEE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_bruce_lee_html_a22c42db625ecedf64f78c067c6887731"><div class="ttname"><a href="class_c_bruce_lee.html#a22c42db625ecedf64f78c067c6887731">CBruceLee::obliczDystans</a></div><div class="ttdeci">float obliczDystans(sf::FloatRect wojownik, sf::FloatRect obiekt)</div><div class="ttdoc">Funkcja liczaca dystans miedzy wojownikiem, a danym obiektem.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:374</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a18d76d7858995807b79da760e97308bb"><div class="ttname"><a href="class_c_bruce_lee.html#a18d76d7858995807b79da760e97308bb">CBruceLee::~CBruceLee</a></div><div class="ttdeci">~CBruceLee()</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:51</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a468d7fd079cff08eaea0979c47f3b6a0"><div class="ttname"><a href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">CObiekt::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Poczatkowa wspolrzedna Y obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:38</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a808b3c6628ad8632d6619571d709f910"><div class="ttname"><a href="class_c_bruce_lee.html#a808b3c6628ad8632d6619571d709f910">CBruceLee::ruchKopniecia</a></div><div class="ttdeci">void ruchKopniecia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie nog oraz wykrywanie ich kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:189</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html"><div class="ttname"><a href="class_c_bruce_lee.html">CBruceLee</a></div><div class="ttdef"><b>Definition:</b> bruceLee.h:27</div></div>
+<div class="ttc" id="astol_8h_html"><div class="ttname"><a href="stol_8h.html">stol.h</a></div><div class="ttdoc">Plik naglowkowy modulu Stol.</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_ade8023bd49976de68a73d8666cca7d46"><div class="ttname"><a href="class_c_bruce_lee.html#ade8023bd49976de68a73d8666cca7d46">CBruceLee::renderAtakPiescia</a></div><div class="ttdeci">void renderAtakPiescia(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie ataku piescia wojownika.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:545</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_aa026780c406b36eaf5853a1ebca4d062"><div class="ttname"><a href="class_c_bruce_lee.html#aa026780c406b36eaf5853a1ebca4d062">CBruceLee::CBruceLee</a></div><div class="ttdeci">CBruceLee(int wx=200, int wy=200, string i=&quot;Bruce Lee&quot;, int z=60, int sz=6, int szer=100, int wys=100, int w=4, int s=10)</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:45</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_ae2a630bcc6fedb9ebbf4e3028e4de83c"><div class="ttname"><a href="class_c_bruce_lee.html#ae2a630bcc6fedb9ebbf4e3028e4de83c">CBruceLee::wykryjKolizjeZOknem</a></div><div class="ttdeci">void wykryjKolizjeZOknem(const sf::RenderTarget *okno)</div><div class="ttdoc">Funkcja wykrywajaca kolizje z ramammi okna.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:393</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a7810379c8187d5a44eef12fff52a5de2"><div class="ttname"><a href="class_c_bruce_lee.html#a7810379c8187d5a44eef12fff52a5de2">CBruceLee::ruchPiescia</a></div><div class="ttdeci">void ruchPiescia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie piesci oraz wykrywanie ich kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:96</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_ac2aef1c1ce1aa321d3b0b8fc83f6dbd5"><div class="ttname"><a href="class_c_bruce_lee.html#ac2aef1c1ce1aa321d3b0b8fc83f6dbd5">CBruceLee::liczCzas</a></div><div class="ttdeci">void liczCzas()</div><div class="ttdoc">Funkcja odliczajaca czas od ostatniego uzycia poszczegolnych atakow. Odliczanie zatrzymuje sie na war...</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:379</div></div>
+<div class="ttc" id="aobiekt_8h_html"><div class="ttname"><a href="obiekt_8h.html">obiekt.h</a></div><div class="ttdoc">Plik naglowkowy modulu Obiekt.</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_afb40d42e97c393cd42fafd1e2e15c478"><div class="ttname"><a href="class_c_bruce_lee.html#afb40d42e97c393cd42fafd1e2e15c478">CBruceLee::przyjmijObrazenia</a></div><div class="ttdeci">void przyjmijObrazenia(int liczbaObrazen)</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen wojownikowi (np. po dostaniu atakiem)</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:529</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_ae73fdf73f62fa9c2a56230f8f777c2a3"><div class="ttname"><a href="class_c_bruce_lee.html#ae73fdf73f62fa9c2a56230f8f777c2a3">CBruceLee::atakPiescia</a></div><div class="ttdeci">void atakPiescia(bool wykonajAtak)</div><div class="ttdoc">Funkcja dodajaca piesc do wektora piesci.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:56</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a89fad98b431f808068ba0ecfc43a6dc2"><div class="ttname"><a href="class_c_bruce_lee.html#a89fad98b431f808068ba0ecfc43a6dc2">CBruceLee::atakSpecjalny</a></div><div class="ttdeci">void atakSpecjalny(bool wykonajAtak)</div><div class="ttdoc">Funkcja wywolujaca atak specjalny (np. rzut szurikenem lub rozpoczecie czasu premii).</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:231</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a82cfa5491d0e6631b476352e6226949a"><div class="ttname"><a href="class_c_bruce_lee.html#a82cfa5491d0e6631b476352e6226949a">CBruceLee::wykryjKolizjeZObiektami</a></div><div class="ttdeci">void wykryjKolizjeZObiektami(std::vector&lt; CObiekt * &gt; obiekty)</div><div class="ttdoc">Funkcja wykrywajaca kolizje z innymi obiektami na planszy.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:409</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_ae8ebf5933a4ede54f8745dc9e10f5b61"><div class="ttname"><a href="class_c_bruce_lee.html#ae8ebf5933a4ede54f8745dc9e10f5b61">CBruceLee::update</a></div><div class="ttdeci">void update(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; obiekty)</div><div class="ttdoc">Funkcja odpowiadajaca za samodzielne zachowywanie sie wojownika.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:447</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a835ab497cbe9a7d1c56d650a7068f82b"><div class="ttname"><a href="class_c_bruce_lee.html#a835ab497cbe9a7d1c56d650a7068f82b">CBruceLee::ruchAtakuSpecjalnego</a></div><div class="ttdeci">void ruchAtakuSpecjalnego(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie atakow specjalnych lub odliczanie czasu ich trwania.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:252</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a259589c8acd9cf28b3f7230c4f04c0f0"><div class="ttname"><a href="class_c_bruce_lee.html#a259589c8acd9cf28b3f7230c4f04c0f0">CBruceLee::kopniecie</a></div><div class="ttdeci">void kopniecie(bool wykonajAtak)</div><div class="ttdoc">Funkcja dodajaca noge do wektora nogi.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:138</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a571d0312917e2fb3fdbec43e1611ee84"><div class="ttname"><a href="class_c_bruce_lee.html#a571d0312917e2fb3fdbec43e1611ee84">CBruceLee::chodzenie</a></div><div class="ttdeci">void chodzenie(char stronaRuchu)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie postaci oraz jej atakow.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:295</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a8e67f9227cfda8d6516e621db7c94afa"><div class="ttname"><a href="class_c_bruce_lee.html#a8e67f9227cfda8d6516e621db7c94afa">CBruceLee::trybSterowania</a></div><div class="ttdeci">bool trybSterowania</div><div class="ttdoc">Zmienna przechowywujaca informacje o tym, czy postac jest sterowana przez gracza.</div><div class="ttdef"><b>Definition:</b> bruceLee.h:47</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_ac53b51a99caeef9482531eb22057068f"><div class="ttname"><a href="class_c_bruce_lee.html#ac53b51a99caeef9482531eb22057068f">CBruceLee::renderKopniecie</a></div><div class="ttdeci">void renderKopniecie(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie kopniecia wojownika.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:553</div></div>
+<div class="ttc" id="aclass_c_wojownik_html"><div class="ttname"><a href="class_c_wojownik.html">CWojownik</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:76</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a76de83c57d6539d180f228f5304bb543"><div class="ttname"><a href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">CObiekt::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">Poczatkowa wspolrzedna X obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:36</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a4dcdcfe7de6ca1f0b782c74cd01a0bd5"><div class="ttname"><a href="class_c_bruce_lee.html#a4dcdcfe7de6ca1f0b782c74cd01a0bd5">CBruceLee::renderSzurikeny</a></div><div class="ttdeci">void renderSzurikeny(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie pociskow wystrzelonych przez wojownika.</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:537</div></div>
+<div class="ttc" id="aclass_c_bruce_lee_html_a1dd5db7a7e741a059098c7bf1b75af93"><div class="ttname"><a href="class_c_bruce_lee.html#a1dd5db7a7e741a059098c7bf1b75af93">CBruceLee::render</a></div><div class="ttdeci">void render(sf::RenderTarget *target)</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z wojownikiem (ataki, model itp).</div><div class="ttdef"><b>Definition:</b> bruceLee.cpp:561</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

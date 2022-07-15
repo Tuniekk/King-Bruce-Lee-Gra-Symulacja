@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/gracz.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">gracz.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gracz_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef GRACZ_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define GRACZ_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8h.html">obiekt.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;SFML/System.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;SFML/Window.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;SFML/Audio.hpp&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;SFML/Network.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_gracz.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_gracz.html">CGracz</a> </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_gracz.html#aa3c0de340fe8b83d553696239faedf44">   26</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_gracz.html#aa3c0de340fe8b83d553696239faedf44">nazwaGracza</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_gracz.html#ac383fc7d70d26c249a9a42e0f9a6b292">   28</a></span>&#160;    <a class="code" href="class_c_wojownik.html">CWojownik</a>* <a class="code" href="class_c_gracz.html#ac383fc7d70d26c249a9a42e0f9a6b292">postacGracza</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_gracz.html#a7e5417fc4aa3ac7ca4696b0ab572f156">   31</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#a7e5417fc4aa3ac7ca4696b0ab572f156">pKrokuWLewo</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_gracz.html#a112929337d190a4f98acb34a9a8bcde1">   33</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#a112929337d190a4f98acb34a9a8bcde1">pKrokuWPrawo</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_gracz.html#a606f1d75d8053dfd52f080f6b38a451d">   35</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#a606f1d75d8053dfd52f080f6b38a451d">pKrokuWDol</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_gracz.html#a799e3d1a019e883eb91a3f8de4eaaf71">   37</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#a799e3d1a019e883eb91a3f8de4eaaf71">pKrokuWGore</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_gracz.html#ac0649126452a018df693e3949045b9d2">   39</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#ac0649126452a018df693e3949045b9d2">pAtakuPiescia</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_gracz.html#a2d38cbbef9a8c1ad0a8c07ef344c7f44">   41</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#a2d38cbbef9a8c1ad0a8c07ef344c7f44">pKopniecia</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_gracz.html#a1c7fa4f55326a6354fd080b117347bc6">   43</a></span>&#160;    sf::Keyboard::Key <a class="code" href="class_c_gracz.html#a1c7fa4f55326a6354fd080b117347bc6">pAtakuSpecjalnego</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_c_gracz.html#aa1a4b6965e1a75f9387e049beeca8db2">CGracz</a>(sf::Keyboard::Key pKrL = sf::Keyboard::A, sf::Keyboard::Key pKrP = sf::Keyboard::D, sf::Keyboard::Key pKrD = sf::Keyboard::S, sf::Keyboard::Key pKrG = sf::Keyboard::W,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        sf::Keyboard::Key pAP = sf::Keyboard::R, sf::Keyboard::Key pK = sf::Keyboard::T, sf::Keyboard::Key pAS = sf::Keyboard::Y, <span class="keywordtype">string</span> imie = <span class="stringliteral">&quot;Gracz1&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_gracz.html#a1f77c35bd07474ec11ed5ece562c2372">~CGracz</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif //GRACZ_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_gracz_html_a606f1d75d8053dfd52f080f6b38a451d"><div class="ttname"><a href="class_c_gracz.html#a606f1d75d8053dfd52f080f6b38a451d">CGracz::pKrokuWDol</a></div><div class="ttdeci">sf::Keyboard::Key pKrokuWDol</div><div class="ttdoc">Przycisk sluzacy do chodzenia w dol.</div><div class="ttdef"><b>Definition:</b> gracz.h:35</div></div>
+<div class="ttc" id="aclass_c_gracz_html_aa3c0de340fe8b83d553696239faedf44"><div class="ttname"><a href="class_c_gracz.html#aa3c0de340fe8b83d553696239faedf44">CGracz::nazwaGracza</a></div><div class="ttdeci">string nazwaGracza</div><div class="ttdoc">Imie gracza.</div><div class="ttdef"><b>Definition:</b> gracz.h:26</div></div>
+<div class="ttc" id="aclass_c_gracz_html_ac383fc7d70d26c249a9a42e0f9a6b292"><div class="ttname"><a href="class_c_gracz.html#ac383fc7d70d26c249a9a42e0f9a6b292">CGracz::postacGracza</a></div><div class="ttdeci">CWojownik * postacGracza</div><div class="ttdoc">Wskaznik sluzacy do wskazywania wojownika wybranego przez gracza.</div><div class="ttdef"><b>Definition:</b> gracz.h:28</div></div>
+<div class="ttc" id="aclass_c_gracz_html_a1f77c35bd07474ec11ed5ece562c2372"><div class="ttname"><a href="class_c_gracz.html#a1f77c35bd07474ec11ed5ece562c2372">CGracz::~CGracz</a></div><div class="ttdeci">~CGracz()</div><div class="ttdef"><b>Definition:</b> gracz.cpp:22</div></div>
+<div class="ttc" id="aobiekt_8h_html"><div class="ttname"><a href="obiekt_8h.html">obiekt.h</a></div><div class="ttdoc">Plik naglowkowy modulu Obiekt.</div></div>
+<div class="ttc" id="aclass_c_gracz_html_aa1a4b6965e1a75f9387e049beeca8db2"><div class="ttname"><a href="class_c_gracz.html#aa1a4b6965e1a75f9387e049beeca8db2">CGracz::CGracz</a></div><div class="ttdeci">CGracz(sf::Keyboard::Key pKrL=sf::Keyboard::A, sf::Keyboard::Key pKrP=sf::Keyboard::D, sf::Keyboard::Key pKrD=sf::Keyboard::S, sf::Keyboard::Key pKrG=sf::Keyboard::W, sf::Keyboard::Key pAP=sf::Keyboard::R, sf::Keyboard::Key pK=sf::Keyboard::T, sf::Keyboard::Key pAS=sf::Keyboard::Y, string imie=&quot;Gracz1&quot;)</div><div class="ttdef"><b>Definition:</b> gracz.cpp:10</div></div>
+<div class="ttc" id="aclass_c_gracz_html_a799e3d1a019e883eb91a3f8de4eaaf71"><div class="ttname"><a href="class_c_gracz.html#a799e3d1a019e883eb91a3f8de4eaaf71">CGracz::pKrokuWGore</a></div><div class="ttdeci">sf::Keyboard::Key pKrokuWGore</div><div class="ttdoc">Przycisk sluzacy do chodzenia w gore.</div><div class="ttdef"><b>Definition:</b> gracz.h:37</div></div>
+<div class="ttc" id="aclass_c_gracz_html"><div class="ttname"><a href="class_c_gracz.html">CGracz</a></div><div class="ttdef"><b>Definition:</b> gracz.h:23</div></div>
+<div class="ttc" id="aclass_c_gracz_html_ac0649126452a018df693e3949045b9d2"><div class="ttname"><a href="class_c_gracz.html#ac0649126452a018df693e3949045b9d2">CGracz::pAtakuPiescia</a></div><div class="ttdeci">sf::Keyboard::Key pAtakuPiescia</div><div class="ttdoc">Przycisk sluzacy do wywolania ataku piescia wojownika.</div><div class="ttdef"><b>Definition:</b> gracz.h:39</div></div>
+<div class="ttc" id="aclass_c_gracz_html_a7e5417fc4aa3ac7ca4696b0ab572f156"><div class="ttname"><a href="class_c_gracz.html#a7e5417fc4aa3ac7ca4696b0ab572f156">CGracz::pKrokuWLewo</a></div><div class="ttdeci">sf::Keyboard::Key pKrokuWLewo</div><div class="ttdoc">Przycisk sluzacy do chodzenia w lewo.</div><div class="ttdef"><b>Definition:</b> gracz.h:31</div></div>
+<div class="ttc" id="aclass_c_gracz_html_a2d38cbbef9a8c1ad0a8c07ef344c7f44"><div class="ttname"><a href="class_c_gracz.html#a2d38cbbef9a8c1ad0a8c07ef344c7f44">CGracz::pKopniecia</a></div><div class="ttdeci">sf::Keyboard::Key pKopniecia</div><div class="ttdoc">Przycisk sluzacy do wywolania kopniecia wojownika.</div><div class="ttdef"><b>Definition:</b> gracz.h:41</div></div>
+<div class="ttc" id="aclass_c_gracz_html_a1c7fa4f55326a6354fd080b117347bc6"><div class="ttname"><a href="class_c_gracz.html#a1c7fa4f55326a6354fd080b117347bc6">CGracz::pAtakuSpecjalnego</a></div><div class="ttdeci">sf::Keyboard::Key pAtakuSpecjalnego</div><div class="ttdoc">Przycisk sluzacy do wywolania ataku specjalnego wojownika.</div><div class="ttdef"><b>Definition:</b> gracz.h:43</div></div>
+<div class="ttc" id="aclass_c_wojownik_html"><div class="ttname"><a href="class_c_wojownik.html">CWojownik</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:76</div></div>
+<div class="ttc" id="aclass_c_gracz_html_a112929337d190a4f98acb34a9a8bcde1"><div class="ttname"><a href="class_c_gracz.html#a112929337d190a4f98acb34a9a8bcde1">CGracz::pKrokuWPrawo</a></div><div class="ttdeci">sf::Keyboard::Key pKrokuWPrawo</div><div class="ttdoc">Przycisk sluzacy do chodzenia w prawo.</div><div class="ttdef"><b>Definition:</b> gracz.h:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

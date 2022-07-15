@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/jackieChan.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">jackieChan.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="jackie_chan_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef JACKIECHAN_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define JACKIECHAN_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8h.html">obiekt.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="skrzynia_8h.html">skrzynia.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">* \brief Wojownik Jackie Chan:</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*Atak piescia oraz kopniecie standardowe.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*Atak specjalny - Jackie Chan atakuje piescia o duzo wiekszym rozmiarze.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">*Wojownik ten jest w stanie przechodzic przez skrzynie. Inne przeszkody oraz wojownicy blokuja postac.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_jackie_chan.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_jackie_chan.html">CJackieChan</a> :<span class="keyword">public</span> <a class="code" href="class_c_wojownik.html">CWojownik</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> czasTrwaniaCyklu;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> czasObecnyCyklu;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::vector&lt;sf::RectangleShape&gt; atakiSpecjalne; <span class="comment">// Wektor przechowywujacy ataki specjalne wyrzucone przez wojownika</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    vector&lt;float&gt; xKierunkiAtakowSpecjalnych;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    vector&lt;float&gt; yKierunkiAtakowSpecjalnych;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> inicjujZmienne(<span class="keywordtype">int</span> wx, <span class="keywordtype">int</span> wy, <span class="keywordtype">string</span> i, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> sz, <span class="keywordtype">int</span> szer, <span class="keywordtype">int</span> wys, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> inicjujModel();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_jackie_chan.html#ac1bc23c7d8a87e3d812175fd9f29c1e3">   44</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_jackie_chan.html#ac1bc23c7d8a87e3d812175fd9f29c1e3">trybSterowania</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//Konstruktor i destruktor</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_c_jackie_chan.html#a42e737584bd39dda4df2da3729e7880c">CJackieChan</a>(<span class="keywordtype">int</span> wx = 600, <span class="keywordtype">int</span> wy = 650, <span class="keywordtype">string</span> i = <span class="stringliteral">&quot;Jackie Chan&quot;</span>, <span class="keywordtype">int</span> z = 70, <span class="keywordtype">int</span> sz = 7, <span class="keywordtype">int</span> szer = 85, <span class="keywordtype">int</span> wys = 85, <span class="keywordtype">int</span> w = 3, <span class="keywordtype">int</span> s = 10);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_jackie_chan.html#a50a313b5293abf53e042cdf6ca82674b">~CJackieChan</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#ad7c5ff446416ee0d56b9eed49433636f">atakPiescia</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a0d3f8b152cf31113d53e7a49b27a45f6">ruchPiescia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a03f7f2cd8d6428779f55039830b17ceb">kopniecie</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a65428644ad165802be00e3478415d7f5">ruchKopniecia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#ad0b8ffc9eedfeb1ae7ef4adf945a3525">atakSpecjalny</a>(<span class="keywordtype">bool</span> wykonajAtak);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#ad7f3b2264acb7ecce318fc9ac6e41678">ruchAtakuSpecjalnego</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#aabd7149937689da69e3042a6f6fd57ba">chodzenie</a>(<span class="keywordtype">char</span> stronaRuchu);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_jackie_chan.html#a329b01b2db201d9c13cda67689c45fee">obliczDystans</a>(sf::FloatRect wojownik, sf::FloatRect obiekt);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a415c96cd06e51a5c47f8b6cd1b4dfec1">liczCzas</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#ab24a132b324c9fb8187fb6abf2d01c05">wykryjKolizjeZOknem</a>(<span class="keyword">const</span> sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a14f9cb2472d99c3fd42ce4e41540611a">wykryjKolizjeZObiektami</a>(std::vector&lt;CObiekt*&gt; obiekty);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a041aa341b94384cb177743a0c23c79de">update</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; obiekty);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#ae4ac5bb5fc4f7bd66c9c45e60667cc0b">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#af4f1010c8d1ef4369f8a86216a97714f">renderAtakPiescia</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a2bc147483da9f20b22a8fcb64cf48dd0">renderKopniecie</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#a2bd916029e42bc2dd5f48658068de694">renderAtakSpecjalny</a>(sf::RenderTarget* okno);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_jackie_chan.html#aa33a70b1077d52722d3061e29b41d0ae">render</a>(sf::RenderTarget* target);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif //JACKIECHAN_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_jackie_chan_html_ad7f3b2264acb7ecce318fc9ac6e41678"><div class="ttname"><a href="class_c_jackie_chan.html#ad7f3b2264acb7ecce318fc9ac6e41678">CJackieChan::ruchAtakuSpecjalnego</a></div><div class="ttdeci">void ruchAtakuSpecjalnego(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie atakow specjalnych lub odliczanie czasu ich trwania.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:275</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a329b01b2db201d9c13cda67689c45fee"><div class="ttname"><a href="class_c_jackie_chan.html#a329b01b2db201d9c13cda67689c45fee">CJackieChan::obliczDystans</a></div><div class="ttdeci">float obliczDystans(sf::FloatRect wojownik, sf::FloatRect obiekt)</div><div class="ttdoc">Funkcja liczaca dystans miedzy wojownikiem, a danym obiektem.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:416</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_ab24a132b324c9fb8187fb6abf2d01c05"><div class="ttname"><a href="class_c_jackie_chan.html#ab24a132b324c9fb8187fb6abf2d01c05">CJackieChan::wykryjKolizjeZOknem</a></div><div class="ttdeci">void wykryjKolizjeZOknem(const sf::RenderTarget *okno)</div><div class="ttdoc">Funkcja wykrywajaca kolizje z ramammi okna.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:473</div></div>
+<div class="ttc" id="aobiekt_8h_html"><div class="ttname"><a href="obiekt_8h.html">obiekt.h</a></div><div class="ttdoc">Plik naglowkowy modulu Obiekt.</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a03f7f2cd8d6428779f55039830b17ceb"><div class="ttname"><a href="class_c_jackie_chan.html#a03f7f2cd8d6428779f55039830b17ceb">CJackieChan::kopniecie</a></div><div class="ttdeci">void kopniecie(bool wykonajAtak)</div><div class="ttdoc">Funkcja dodajaca noge do wektora nogi.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:142</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a041aa341b94384cb177743a0c23c79de"><div class="ttname"><a href="class_c_jackie_chan.html#a041aa341b94384cb177743a0c23c79de">CJackieChan::update</a></div><div class="ttdeci">void update(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; obiekty)</div><div class="ttdoc">Funkcja odpowiadajaca za samodzielne zachowywanie sie wojownika.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:489</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a65428644ad165802be00e3478415d7f5"><div class="ttname"><a href="class_c_jackie_chan.html#a65428644ad165802be00e3478415d7f5">CJackieChan::ruchKopniecia</a></div><div class="ttdeci">void ruchKopniecia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie nog oraz wykrywanie ich kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:193</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_aa33a70b1077d52722d3061e29b41d0ae"><div class="ttname"><a href="class_c_jackie_chan.html#aa33a70b1077d52722d3061e29b41d0ae">CJackieChan::render</a></div><div class="ttdeci">void render(sf::RenderTarget *target)</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z wojownikiem (ataki, model itp).</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:602</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_ac1bc23c7d8a87e3d812175fd9f29c1e3"><div class="ttname"><a href="class_c_jackie_chan.html#ac1bc23c7d8a87e3d812175fd9f29c1e3">CJackieChan::trybSterowania</a></div><div class="ttdeci">bool trybSterowania</div><div class="ttdoc">Zmienna przechowywujaca informacje o tym, czy postac jest sterowana przez gracza.</div><div class="ttdef"><b>Definition:</b> jackieChan.h:44</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_af4f1010c8d1ef4369f8a86216a97714f"><div class="ttname"><a href="class_c_jackie_chan.html#af4f1010c8d1ef4369f8a86216a97714f">CJackieChan::renderAtakPiescia</a></div><div class="ttdeci">void renderAtakPiescia(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie ataku piescia wojownika.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:578</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a50a313b5293abf53e042cdf6ca82674b"><div class="ttname"><a href="class_c_jackie_chan.html#a50a313b5293abf53e042cdf6ca82674b">CJackieChan::~CJackieChan</a></div><div class="ttdeci">~CJackieChan()</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:54</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_ad0b8ffc9eedfeb1ae7ef4adf945a3525"><div class="ttname"><a href="class_c_jackie_chan.html#ad0b8ffc9eedfeb1ae7ef4adf945a3525">CJackieChan::atakSpecjalny</a></div><div class="ttdeci">void atakSpecjalny(bool wykonajAtak)</div><div class="ttdoc">Funkcja wywolujaca atak specjalny (np. rzut szurikenem lub rozpoczecie czasu premii).</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:235</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a415c96cd06e51a5c47f8b6cd1b4dfec1"><div class="ttname"><a href="class_c_jackie_chan.html#a415c96cd06e51a5c47f8b6cd1b4dfec1">CJackieChan::liczCzas</a></div><div class="ttdeci">void liczCzas()</div><div class="ttdoc">Funkcja odliczajaca czas od ostatniego uzycia poszczegolnych atakow. Odliczanie zatrzymuje sie na war...</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:421</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a42e737584bd39dda4df2da3729e7880c"><div class="ttname"><a href="class_c_jackie_chan.html#a42e737584bd39dda4df2da3729e7880c">CJackieChan::CJackieChan</a></div><div class="ttdeci">CJackieChan(int wx=600, int wy=650, string i=&quot;Jackie Chan&quot;, int z=70, int sz=7, int szer=85, int wys=85, int w=3, int s=10)</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:48</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_ae4ac5bb5fc4f7bd66c9c45e60667cc0b"><div class="ttname"><a href="class_c_jackie_chan.html#ae4ac5bb5fc4f7bd66c9c45e60667cc0b">CJackieChan::przyjmijObrazenia</a></div><div class="ttdeci">void przyjmijObrazenia(int liczbaObrazen)</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen wojownikowi (np. po dostaniu atakiem)</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:570</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html"><div class="ttname"><a href="class_c_jackie_chan.html">CJackieChan</a></div><div class="ttdef"><b>Definition:</b> jackieChan.h:24</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a0d3f8b152cf31113d53e7a49b27a45f6"><div class="ttname"><a href="class_c_jackie_chan.html#a0d3f8b152cf31113d53e7a49b27a45f6">CJackieChan::ruchPiescia</a></div><div class="ttdeci">void ruchPiescia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie piesci oraz wykrywanie ich kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:100</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a2bd916029e42bc2dd5f48658068de694"><div class="ttname"><a href="class_c_jackie_chan.html#a2bd916029e42bc2dd5f48658068de694">CJackieChan::renderAtakSpecjalny</a></div><div class="ttdeci">void renderAtakSpecjalny(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie ataku specjalnego wojownika.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:594</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_aabd7149937689da69e3042a6f6fd57ba"><div class="ttname"><a href="class_c_jackie_chan.html#aabd7149937689da69e3042a6f6fd57ba">CJackieChan::chodzenie</a></div><div class="ttdeci">void chodzenie(char stronaRuchu)</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie postaci oraz jej atakow.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:317</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a2bc147483da9f20b22a8fcb64cf48dd0"><div class="ttname"><a href="class_c_jackie_chan.html#a2bc147483da9f20b22a8fcb64cf48dd0">CJackieChan::renderKopniecie</a></div><div class="ttdeci">void renderKopniecie(sf::RenderTarget *okno)</div><div class="ttdoc">Wyswietlanie kopniecia wojownika.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:586</div></div>
+<div class="ttc" id="aclass_c_wojownik_html"><div class="ttname"><a href="class_c_wojownik.html">CWojownik</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:76</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_a14f9cb2472d99c3fd42ce4e41540611a"><div class="ttname"><a href="class_c_jackie_chan.html#a14f9cb2472d99c3fd42ce4e41540611a">CJackieChan::wykryjKolizjeZObiektami</a></div><div class="ttdeci">void wykryjKolizjeZObiektami(std::vector&lt; CObiekt * &gt; obiekty)</div><div class="ttdoc">Funkcja wykrywajaca kolizje z innymi obiektami na planszy.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:435</div></div>
+<div class="ttc" id="aclass_c_jackie_chan_html_ad7c5ff446416ee0d56b9eed49433636f"><div class="ttname"><a href="class_c_jackie_chan.html#ad7c5ff446416ee0d56b9eed49433636f">CJackieChan::atakPiescia</a></div><div class="ttdeci">void atakPiescia(bool wykonajAtak)</div><div class="ttdoc">Funkcja dodajaca piesc do wektora piesci.</div><div class="ttdef"><b>Definition:</b> jackieChan.cpp:59</div></div>
+<div class="ttc" id="askrzynia_8h_html"><div class="ttname"><a href="skrzynia_8h.html">skrzynia.h</a></div><div class="ttdoc">Plik naglowkowy modulu Skrzynia.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

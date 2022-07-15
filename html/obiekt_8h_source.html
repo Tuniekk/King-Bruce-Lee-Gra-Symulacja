@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wojciech_Cegielski_KingBruceLee: Plik źródłowy PIERWSZAPROBA/obiekt.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wojciech_Cegielski_KingBruceLee
+   </div>
+   <div id="projectbrief">Projekt z przedmiotu PJC. Symulacja walki karateków.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b86972fb8991c8e5c6798a4bdad156b0.html">PIERWSZAPROBA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">obiekt.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="obiekt_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef OBIEKT_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define OBIEKT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;SFML/System.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;SFML/Window.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;SFML/Audio.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;SFML/Network.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//Typ funkcji zwracajaca informacje o tym, czy jakis obiekt jest danej klasy. Uzywane glownie do sprawdzania, w co trafil jakis atak lub na co napotkala sie jakas postac.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Base, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="obiekt_8h.html#a4ae612eca67a5826f703aeea672aa39c">   24</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="obiekt_8h.html#a4ae612eca67a5826f703aeea672aa39c">instanceof</a>(<span class="keyword">const</span> T* ptr) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>Base*<span class="keyword">&gt;</span>(ptr) != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">Klasa wirtualna posiadajaca podstawowe atrybuty oraz metody sluzace do utworzenia obiektu dowolnej klasy (wojownikow oraz przeszkod).</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_obiekt.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_obiekt.html">CObiekt</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a56cbab5f0efd308bf9e613dca3b9fbd3">   34</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_obiekt.html#a56cbab5f0efd308bf9e613dca3b9fbd3">imie</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">x</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">y</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a193ef64306fd00bbfc6e7ceb296dd3ab">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a193ef64306fd00bbfc6e7ceb296dd3ab">wytrzymalosc</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a04c852f8ccf8657f4a4094561ba99032">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a04c852f8ccf8657f4a4094561ba99032">zdrowie</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a3b4cdd9bed92efca2156ce1e0078e76b">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a3b4cdd9bed92efca2156ce1e0078e76b">szerokosc</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a5c37ebf3252e0ec713e6e63eaba6fab8">   46</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a5c37ebf3252e0ec713e6e63eaba6fab8">wysokosc</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a151721da59648e41274d1ce360a40d3a">   49</a></span>&#160;    sf::RectangleShape <a class="code" href="class_c_obiekt.html#a151721da59648e41274d1ce360a40d3a">model</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#ac6f54265bc89554012a66ea110fcb240">   54</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_obiekt.html#ac6f54265bc89554012a66ea110fcb240">render</a>(sf::RenderTarget* target) = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#ac74cf9dfca5f89c325c973127de1189e">   58</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_obiekt.html#ac74cf9dfca5f89c325c973127de1189e">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen) = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#ae8b5f2d190e77e742e752cdb25aaeafb">   61</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_obiekt.html#ae8b5f2d190e77e742e752cdb25aaeafb">zwrocImie</a>() { <span class="keywordflow">return</span> imie; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#a3ee5b16b3731598112ae47218f74c6f9">   64</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#a3ee5b16b3731598112ae47218f74c6f9">zwrocZdrowie</a>() { <span class="keywordflow">return</span> zdrowie; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#ad0eec5f1c12423002eb9b081a1f8dd89">   67</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#ad0eec5f1c12423002eb9b081a1f8dd89">zwrocSzerokosc</a>() { <span class="keywordflow">return</span> szerokosc; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_c_obiekt.html#aff752f2bf36942c0b540b893d07e7013">   70</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_obiekt.html#aff752f2bf36942c0b540b893d07e7013">zwrocWysokosc</a>() { <span class="keywordflow">return</span> wysokosc; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">Klasa wirtualna posiadajaca podstawowe atrybuty oraz metody sluzace do utworzenia dowolnego wojownika.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_wojownik.html">   76</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_wojownik.html">CWojownik</a> :<span class="keyword">public</span> <a class="code" href="class_c_obiekt.html">CObiekt</a> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ae95fbd703deaac10393b28dfc3f1fcb4">   80</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#ae95fbd703deaac10393b28dfc3f1fcb4">cooldownAtakuPiescia</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#aaf0d5675f27e41b16c54e8881961bf8a">   82</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#aaf0d5675f27e41b16c54e8881961bf8a">czasDoAtakuPiescia</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ab17a8cfb99fa55a369028996003f1b10">   85</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#ab17a8cfb99fa55a369028996003f1b10">cooldownKopniecia</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a20b580dfb7a2fd13511c2df85c0b8459">   87</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#a20b580dfb7a2fd13511c2df85c0b8459">czasKopniecia</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a4b1707fb8dd49444c79215d471928509">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#a4b1707fb8dd49444c79215d471928509">cooldownAtakuSpecjalnego</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ac515408de7cda93e2093fd60dc2bfacb">   92</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#ac515408de7cda93e2093fd60dc2bfacb">czasDoAtakuSpecjalnego</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//Parametry opisujace wojownika</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ac4166b14903fda1ce12da7403d37fe35">   97</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#ac4166b14903fda1ce12da7403d37fe35">szybkosc</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a063b5405e6c5ea4cb7c91ad53d031e50">   99</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_wojownik.html#a063b5405e6c5ea4cb7c91ad53d031e50">sila</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a4d0d0c1e4d9ceef799f3db348d9d7438">  102</a></span>&#160;    <span class="keywordtype">float</span> xKierunek = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ab97bfd8bf3dfd565f232878358d68ac3">  104</a></span>&#160;    <span class="keywordtype">float</span> yKierunek = 1;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a7fdf8876cd768842cdb3cc1c77ae3bc3">  107</a></span>&#160;    <span class="keywordtype">float</span> predkoscPiesci = 0.3;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#aff6098d4e3837325c474b6c665d43d93">  110</a></span>&#160;    <span class="keywordtype">float</span> predkoscNogi = 0.3;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//Wektory przechowywujace ataki postaci</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a832c26e9b06070b2592c7e6f1243856d">  115</a></span>&#160;    std::vector&lt;sf::RectangleShape&gt; <a class="code" href="class_c_wojownik.html#a832c26e9b06070b2592c7e6f1243856d">piesci</a>; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a74d834c6a35b8250f646a70c97f814fa">  117</a></span>&#160;    std::vector&lt;sf::RectangleShape&gt; <a class="code" href="class_c_wojownik.html#a74d834c6a35b8250f646a70c97f814fa">nogi</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//Wektory przechowywujace kierunki ruchu piesci postaci</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a63f02ffcc2480473777e0e5a3985f2e9">  122</a></span>&#160;    vector&lt;float&gt; <a class="code" href="class_c_wojownik.html#a63f02ffcc2480473777e0e5a3985f2e9">xKierunkiPiesci</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a538da03d41752a8f34610739e29accf8">  124</a></span>&#160;    vector&lt;float&gt; <a class="code" href="class_c_wojownik.html#a538da03d41752a8f34610739e29accf8">yKierunkiPiesci</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//Wektory przechowywujace kierunki nog piesci postaci</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a82c4cf3b7b5c43b74de8d085c9d8163f">  129</a></span>&#160;    vector&lt;float&gt; <a class="code" href="class_c_wojownik.html#a82c4cf3b7b5c43b74de8d085c9d8163f">xKierunkiNog</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ad2ac6c6a59f1474b09c4369f5654402a">  131</a></span>&#160;    vector&lt;float&gt; <a class="code" href="class_c_wojownik.html#ad2ac6c6a59f1474b09c4369f5654402a">yKierunkiNog</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//Funkcje odpowiadajace za operacje wykonywane w tle (odliczanie czasu, wykrywanie kolizji itp)</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ac1f36c3accaa0c045d2b055cd9b9e2c7">  139</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_c_wojownik.html#ac1f36c3accaa0c045d2b055cd9b9e2c7">obliczDystans</a>(sf::FloatRect wojownik, sf::FloatRect obiekt) = 0;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a11f5c058acf2a67e39d43740e16b0fb5">  144</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a11f5c058acf2a67e39d43740e16b0fb5">liczCzas</a>() = 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#aee8eb2feb7c1c457270701e452033843">  148</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#aee8eb2feb7c1c457270701e452033843">wykryjKolizjeZOknem</a>(<span class="keyword">const</span> sf::RenderTarget* okno) = 0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ad72fd702eeb45489824e9461afa646be">  152</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#ad72fd702eeb45489824e9461afa646be">wykryjKolizjeZObiektami</a>(std::vector&lt;CObiekt*&gt; obiekty) = 0;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//Funkcje odpowiadajace za akcje postaci wywolywane wcisnieciem klawiszy (ataki, poruszanie sie)</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#afe0128c6d6eecbbe23287f297e597fae">  159</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#afe0128c6d6eecbbe23287f297e597fae">atakPiescia</a>(<span class="keywordtype">bool</span> wykonajAtak) = 0;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a7601383d17aa52a1082279f66dcecc16">  164</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a7601383d17aa52a1082279f66dcecc16">ruchPiescia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele) = 0; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a9dc47faa4103c9e99e76973b656fa5df">  168</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a9dc47faa4103c9e99e76973b656fa5df">kopniecie</a>(<span class="keywordtype">bool</span> wykonajAtak) = 0;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a0afd99bffa3c446074abd1bc9ea21d06">  173</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a0afd99bffa3c446074abd1bc9ea21d06">ruchKopniecia</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele) = 0;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#ab5684b06b1fa923df2c00087925e18ea">  177</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#ab5684b06b1fa923df2c00087925e18ea">atakSpecjalny</a>(<span class="keywordtype">bool</span> wykonajAtak) = 0;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#abcf320468c07c9e24bde44b62ee1d882">  182</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#abcf320468c07c9e24bde44b62ee1d882">ruchAtakuSpecjalnego</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; cele) = 0;</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a6e5f3144a6b7e321ff30a7da4073d88c">  186</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a6e5f3144a6b7e321ff30a7da4073d88c">chodzenie</a>(<span class="keywordtype">char</span> stronaRuchu) = 0; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#abed3990a3e660651ebc8cee795f9489a">  192</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#abed3990a3e660651ebc8cee795f9489a">update</a>(<span class="keyword">const</span> sf::RenderTarget* okno, std::vector&lt;CObiekt*&gt; obiekty) = 0;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#af9f1e8309b4d2ee391f52075b8c0c261">  197</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#af9f1e8309b4d2ee391f52075b8c0c261">renderAtakPiescia</a>(sf::RenderTarget* okno) = 0;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#af2be376b006a3cf05a5cf42141e15cb7">  201</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#af2be376b006a3cf05a5cf42141e15cb7">renderKopniecie</a>(sf::RenderTarget* okno) = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a0b36188dd01aea2ac65d239da7f61bfb">  205</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a0b36188dd01aea2ac65d239da7f61bfb">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen) = 0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="class_c_wojownik.html#a1f64fd2d632952787981f5ccccc167b4">  209</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_wojownik.html#a1f64fd2d632952787981f5ccccc167b4">render</a>(sf::RenderTarget* target) = 0;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;};</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">Klasa wirtualna posiadajaca podstawowe atrybuty oraz metody sluzace do utworzenia dowolnej przeszkody.</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="class_c_przeszkoda.html">  215</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_przeszkoda.html">CPrzeszkoda</a> :<span class="keyword">public</span> <a class="code" href="class_c_obiekt.html">CObiekt</a> {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="class_c_przeszkoda.html#afb6fbf9fe594163686307a363921f8e8">  221</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_przeszkoda.html#afb6fbf9fe594163686307a363921f8e8">render</a>(sf::RenderTarget* target) = 0;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="class_c_przeszkoda.html#a3d21a211ee0da9d146c8c0926a64cbdc">  225</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_przeszkoda.html#a3d21a211ee0da9d146c8c0926a64cbdc">przyjmijObrazenia</a>(<span class="keywordtype">int</span> liczbaObrazen) = 0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;};</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif //GRACZ_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_c_obiekt_html_ad0eec5f1c12423002eb9b081a1f8dd89"><div class="ttname"><a href="class_c_obiekt.html#ad0eec5f1c12423002eb9b081a1f8dd89">CObiekt::zwrocSzerokosc</a></div><div class="ttdeci">int zwrocSzerokosc()</div><div class="ttdoc">//Funkcja zwracajaca szerokosc obiektu</div><div class="ttdef"><b>Definition:</b> obiekt.h:67</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_abcf320468c07c9e24bde44b62ee1d882"><div class="ttname"><a href="class_c_wojownik.html#abcf320468c07c9e24bde44b62ee1d882">CWojownik::ruchAtakuSpecjalnego</a></div><div class="ttdeci">virtual void ruchAtakuSpecjalnego(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)=0</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie atakow specjalnych lub odliczanie czasu ich trwania.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ab5684b06b1fa923df2c00087925e18ea"><div class="ttname"><a href="class_c_wojownik.html#ab5684b06b1fa923df2c00087925e18ea">CWojownik::atakSpecjalny</a></div><div class="ttdeci">virtual void atakSpecjalny(bool wykonajAtak)=0</div><div class="ttdoc">Funkcja wywolujaca atak specjalny (np. rzut szurikenem lub rozpoczecie czasu premii).</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a9dc47faa4103c9e99e76973b656fa5df"><div class="ttname"><a href="class_c_wojownik.html#a9dc47faa4103c9e99e76973b656fa5df">CWojownik::kopniecie</a></div><div class="ttdeci">virtual void kopniecie(bool wykonajAtak)=0</div><div class="ttdoc">Funkcja dodajaca noge do wektora nogi.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a11f5c058acf2a67e39d43740e16b0fb5"><div class="ttname"><a href="class_c_wojownik.html#a11f5c058acf2a67e39d43740e16b0fb5">CWojownik::liczCzas</a></div><div class="ttdeci">virtual void liczCzas()=0</div><div class="ttdoc">Funkcja odliczajaca czas od ostatniego uzycia poszczegolnych atakow. Odliczanie zatrzymuje sie na war...</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_aff752f2bf36942c0b540b893d07e7013"><div class="ttname"><a href="class_c_obiekt.html#aff752f2bf36942c0b540b893d07e7013">CObiekt::zwrocWysokosc</a></div><div class="ttdeci">int zwrocWysokosc()</div><div class="ttdoc">//Funkcja zwracajaca wysokosc obiektu</div><div class="ttdef"><b>Definition:</b> obiekt.h:70</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_ac74cf9dfca5f89c325c973127de1189e"><div class="ttname"><a href="class_c_obiekt.html#ac74cf9dfca5f89c325c973127de1189e">CObiekt::przyjmijObrazenia</a></div><div class="ttdeci">virtual void przyjmijObrazenia(int liczbaObrazen)=0</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen obiektowi (np. po dostaniu atakiem)</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a468d7fd079cff08eaea0979c47f3b6a0"><div class="ttname"><a href="class_c_obiekt.html#a468d7fd079cff08eaea0979c47f3b6a0">CObiekt::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Poczatkowa wspolrzedna Y obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:38</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a74d834c6a35b8250f646a70c97f814fa"><div class="ttname"><a href="class_c_wojownik.html#a74d834c6a35b8250f646a70c97f814fa">CWojownik::nogi</a></div><div class="ttdeci">std::vector&lt; sf::RectangleShape &gt; nogi</div><div class="ttdoc">Wektor przechowywujacy wszystkie nogi.</div><div class="ttdef"><b>Definition:</b> obiekt.h:117</div></div>
+<div class="ttc" id="aclass_c_obiekt_html"><div class="ttname"><a href="class_c_obiekt.html">CObiekt</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:31</div></div>
+<div class="ttc" id="aclass_c_przeszkoda_html_afb6fbf9fe594163686307a363921f8e8"><div class="ttname"><a href="class_c_przeszkoda.html#afb6fbf9fe594163686307a363921f8e8">CPrzeszkoda::render</a></div><div class="ttdeci">virtual void render(sf::RenderTarget *target)=0</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z przeszkoda (model itp).</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_aee8eb2feb7c1c457270701e452033843"><div class="ttname"><a href="class_c_wojownik.html#aee8eb2feb7c1c457270701e452033843">CWojownik::wykryjKolizjeZOknem</a></div><div class="ttdeci">virtual void wykryjKolizjeZOknem(const sf::RenderTarget *okno)=0</div><div class="ttdoc">Funkcja wykrywajaca kolizje z ramammi okna.</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_ac6f54265bc89554012a66ea110fcb240"><div class="ttname"><a href="class_c_obiekt.html#ac6f54265bc89554012a66ea110fcb240">CObiekt::render</a></div><div class="ttdeci">virtual void render(sf::RenderTarget *target)=0</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za wyswietlanie wszystkich rzeczy zwiazanych z obiektem (model,...</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_ae8b5f2d190e77e742e752cdb25aaeafb"><div class="ttname"><a href="class_c_obiekt.html#ae8b5f2d190e77e742e752cdb25aaeafb">CObiekt::zwrocImie</a></div><div class="ttdeci">string zwrocImie()</div><div class="ttdoc">//Funkcja zwracajaca imie obiektu</div><div class="ttdef"><b>Definition:</b> obiekt.h:61</div></div>
+<div class="ttc" id="aclass_c_przeszkoda_html"><div class="ttname"><a href="class_c_przeszkoda.html">CPrzeszkoda</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:215</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ad2ac6c6a59f1474b09c4369f5654402a"><div class="ttname"><a href="class_c_wojownik.html#ad2ac6c6a59f1474b09c4369f5654402a">CWojownik::yKierunkiNog</a></div><div class="ttdeci">vector&lt; float &gt; yKierunkiNog</div><div class="ttdoc">Wektor kierunkow w osi Y, w jaka sa odwrocone nog.</div><div class="ttdef"><b>Definition:</b> obiekt.h:131</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ae95fbd703deaac10393b28dfc3f1fcb4"><div class="ttname"><a href="class_c_wojownik.html#ae95fbd703deaac10393b28dfc3f1fcb4">CWojownik::cooldownAtakuPiescia</a></div><div class="ttdeci">int cooldownAtakuPiescia</div><div class="ttdoc">Ilosc czasu jaka trzeba odczekac pomiedzy kolejnymi atakami piesciami.</div><div class="ttdef"><b>Definition:</b> obiekt.h:80</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a3b4cdd9bed92efca2156ce1e0078e76b"><div class="ttname"><a href="class_c_obiekt.html#a3b4cdd9bed92efca2156ce1e0078e76b">CObiekt::szerokosc</a></div><div class="ttdeci">int szerokosc</div><div class="ttdoc">Szerokosc obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:44</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ac1f36c3accaa0c045d2b055cd9b9e2c7"><div class="ttname"><a href="class_c_wojownik.html#ac1f36c3accaa0c045d2b055cd9b9e2c7">CWojownik::obliczDystans</a></div><div class="ttdeci">virtual float obliczDystans(sf::FloatRect wojownik, sf::FloatRect obiekt)=0</div><div class="ttdoc">Funkcja liczaca dystans miedzy wojownikiem, a danym obiektem.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_afe0128c6d6eecbbe23287f297e597fae"><div class="ttname"><a href="class_c_wojownik.html#afe0128c6d6eecbbe23287f297e597fae">CWojownik::atakPiescia</a></div><div class="ttdeci">virtual void atakPiescia(bool wykonajAtak)=0</div><div class="ttdoc">Funkcja dodajaca piesc do wektora piesci.</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a04c852f8ccf8657f4a4094561ba99032"><div class="ttname"><a href="class_c_obiekt.html#a04c852f8ccf8657f4a4094561ba99032">CObiekt::zdrowie</a></div><div class="ttdeci">int zdrowie</div><div class="ttdoc">Ilosc punktow zdrowia. Jezeli bedzie mniejsze lub rowne zero, to obiekt zostaje usuniety (obecnie tyl...</div><div class="ttdef"><b>Definition:</b> obiekt.h:42</div></div>
+<div class="ttc" id="aclass_c_przeszkoda_html_a3d21a211ee0da9d146c8c0926a64cbdc"><div class="ttname"><a href="class_c_przeszkoda.html#a3d21a211ee0da9d146c8c0926a64cbdc">CPrzeszkoda::przyjmijObrazenia</a></div><div class="ttdeci">virtual void przyjmijObrazenia(int liczbaObrazen)=0</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen przeszkodzie (np. po dostaniu atakiem)</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a6e5f3144a6b7e321ff30a7da4073d88c"><div class="ttname"><a href="class_c_wojownik.html#a6e5f3144a6b7e321ff30a7da4073d88c">CWojownik::chodzenie</a></div><div class="ttdeci">virtual void chodzenie(char stronaRuchu)=0</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie postaci oraz jej atakow.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_af9f1e8309b4d2ee391f52075b8c0c261"><div class="ttname"><a href="class_c_wojownik.html#af9f1e8309b4d2ee391f52075b8c0c261">CWojownik::renderAtakPiescia</a></div><div class="ttdeci">virtual void renderAtakPiescia(sf::RenderTarget *okno)=0</div><div class="ttdoc">Wyswietlanie ataku piescia wojownika.</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a151721da59648e41274d1ce360a40d3a"><div class="ttname"><a href="class_c_obiekt.html#a151721da59648e41274d1ce360a40d3a">CObiekt::model</a></div><div class="ttdeci">sf::RectangleShape model</div><div class="ttdoc">Model obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:49</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_af2be376b006a3cf05a5cf42141e15cb7"><div class="ttname"><a href="class_c_wojownik.html#af2be376b006a3cf05a5cf42141e15cb7">CWojownik::renderKopniecie</a></div><div class="ttdeci">virtual void renderKopniecie(sf::RenderTarget *okno)=0</div><div class="ttdoc">Wyswietlanie kopniecia wojownika.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ad72fd702eeb45489824e9461afa646be"><div class="ttname"><a href="class_c_wojownik.html#ad72fd702eeb45489824e9461afa646be">CWojownik::wykryjKolizjeZObiektami</a></div><div class="ttdeci">virtual void wykryjKolizjeZObiektami(std::vector&lt; CObiekt * &gt; obiekty)=0</div><div class="ttdoc">Funkcja wykrywajaca kolizje z innymi obiektami na planszy.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ab17a8cfb99fa55a369028996003f1b10"><div class="ttname"><a href="class_c_wojownik.html#ab17a8cfb99fa55a369028996003f1b10">CWojownik::cooldownKopniecia</a></div><div class="ttdeci">int cooldownKopniecia</div><div class="ttdoc">Ilosc czasu jaka trzeba odczekac pomiedzy kolejnymi kopnieciami.</div><div class="ttdef"><b>Definition:</b> obiekt.h:85</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_aaf0d5675f27e41b16c54e8881961bf8a"><div class="ttname"><a href="class_c_wojownik.html#aaf0d5675f27e41b16c54e8881961bf8a">CWojownik::czasDoAtakuPiescia</a></div><div class="ttdeci">int czasDoAtakuPiescia</div><div class="ttdoc">Ilosc czasu, jaka minela od ostatniego ataku piescia (jezeli == cooldownAtakuPiescia to mozna ponowni...</div><div class="ttdef"><b>Definition:</b> obiekt.h:82</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a63f02ffcc2480473777e0e5a3985f2e9"><div class="ttname"><a href="class_c_wojownik.html#a63f02ffcc2480473777e0e5a3985f2e9">CWojownik::xKierunkiPiesci</a></div><div class="ttdeci">vector&lt; float &gt; xKierunkiPiesci</div><div class="ttdoc">Wektor kierunkow w osi X, w jaka sa odwrocone piesci.</div><div class="ttdef"><b>Definition:</b> obiekt.h:122</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a7601383d17aa52a1082279f66dcecc16"><div class="ttname"><a href="class_c_wojownik.html#a7601383d17aa52a1082279f66dcecc16">CWojownik::ruchPiescia</a></div><div class="ttdeci">virtual void ruchPiescia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)=0</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie piesci oraz wykrywanie ich kolizji z innymi obiektami.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a1f64fd2d632952787981f5ccccc167b4"><div class="ttname"><a href="class_c_wojownik.html#a1f64fd2d632952787981f5ccccc167b4">CWojownik::render</a></div><div class="ttdeci">virtual void render(sf::RenderTarget *target)=0</div><div class="ttdoc">Wyswietlanie wszystkich rzeczy zwiazanych z wojownikiem (ataki, model itp).</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a3ee5b16b3731598112ae47218f74c6f9"><div class="ttname"><a href="class_c_obiekt.html#a3ee5b16b3731598112ae47218f74c6f9">CObiekt::zwrocZdrowie</a></div><div class="ttdeci">int zwrocZdrowie()</div><div class="ttdoc">//Funkcja zwracajaca liczbe punktow zdrowia</div><div class="ttdef"><b>Definition:</b> obiekt.h:64</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ac515408de7cda93e2093fd60dc2bfacb"><div class="ttname"><a href="class_c_wojownik.html#ac515408de7cda93e2093fd60dc2bfacb">CWojownik::czasDoAtakuSpecjalnego</a></div><div class="ttdeci">int czasDoAtakuSpecjalnego</div><div class="ttdoc">Ilosc czasu, jaka minela od ostatniego ataku specjalnego (jezeli == cooldownAtakuPiescia to mozna pon...</div><div class="ttdef"><b>Definition:</b> obiekt.h:92</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a832c26e9b06070b2592c7e6f1243856d"><div class="ttname"><a href="class_c_wojownik.html#a832c26e9b06070b2592c7e6f1243856d">CWojownik::piesci</a></div><div class="ttdeci">std::vector&lt; sf::RectangleShape &gt; piesci</div><div class="ttdoc">Wektor przechowywujacy wszystkie piesci.</div><div class="ttdef"><b>Definition:</b> obiekt.h:115</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a20b580dfb7a2fd13511c2df85c0b8459"><div class="ttname"><a href="class_c_wojownik.html#a20b580dfb7a2fd13511c2df85c0b8459">CWojownik::czasKopniecia</a></div><div class="ttdeci">int czasKopniecia</div><div class="ttdoc">Ilosc czasu, jaka minela od ostatniego kopniecia (jezeli == cooldownAtakuPiescia to mozna ponownie uz...</div><div class="ttdef"><b>Definition:</b> obiekt.h:87</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a56cbab5f0efd308bf9e613dca3b9fbd3"><div class="ttname"><a href="class_c_obiekt.html#a56cbab5f0efd308bf9e613dca3b9fbd3">CObiekt::imie</a></div><div class="ttdeci">string imie</div><div class="ttdoc">Nazwa obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:34</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a538da03d41752a8f34610739e29accf8"><div class="ttname"><a href="class_c_wojownik.html#a538da03d41752a8f34610739e29accf8">CWojownik::yKierunkiPiesci</a></div><div class="ttdeci">vector&lt; float &gt; yKierunkiPiesci</div><div class="ttdoc">Wektor kierunkow w osi Y, w jaka sa odwrocone piesci.</div><div class="ttdef"><b>Definition:</b> obiekt.h:124</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a82c4cf3b7b5c43b74de8d085c9d8163f"><div class="ttname"><a href="class_c_wojownik.html#a82c4cf3b7b5c43b74de8d085c9d8163f">CWojownik::xKierunkiNog</a></div><div class="ttdeci">vector&lt; float &gt; xKierunkiNog</div><div class="ttdoc">Wektor kierunkow w osi X, w jaka sa odwrocone nogi.</div><div class="ttdef"><b>Definition:</b> obiekt.h:129</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a5c37ebf3252e0ec713e6e63eaba6fab8"><div class="ttname"><a href="class_c_obiekt.html#a5c37ebf3252e0ec713e6e63eaba6fab8">CObiekt::wysokosc</a></div><div class="ttdeci">int wysokosc</div><div class="ttdoc">Wysokosc obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:46</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a193ef64306fd00bbfc6e7ceb296dd3ab"><div class="ttname"><a href="class_c_obiekt.html#a193ef64306fd00bbfc6e7ceb296dd3ab">CObiekt::wytrzymalosc</a></div><div class="ttdeci">int wytrzymalosc</div><div class="ttdoc">Ilosc obraze� blokowanych.</div><div class="ttdef"><b>Definition:</b> obiekt.h:40</div></div>
+<div class="ttc" id="aobiekt_8h_html_a4ae612eca67a5826f703aeea672aa39c"><div class="ttname"><a href="obiekt_8h.html#a4ae612eca67a5826f703aeea672aa39c">instanceof</a></div><div class="ttdeci">bool instanceof(const T *ptr)</div><div class="ttdef"><b>Definition:</b> obiekt.h:24</div></div>
+<div class="ttc" id="aclass_c_wojownik_html"><div class="ttname"><a href="class_c_wojownik.html">CWojownik</a></div><div class="ttdef"><b>Definition:</b> obiekt.h:76</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a0afd99bffa3c446074abd1bc9ea21d06"><div class="ttname"><a href="class_c_wojownik.html#a0afd99bffa3c446074abd1bc9ea21d06">CWojownik::ruchKopniecia</a></div><div class="ttdeci">virtual void ruchKopniecia(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; cele)=0</div><div class="ttdoc">Funkcja odpowiadajaca za poruszanie sie nog oraz wykrywanie ich kolizji z innymi obiektami.</div></div>
+<div class="ttc" id="aclass_c_obiekt_html_a76de83c57d6539d180f228f5304bb543"><div class="ttname"><a href="class_c_obiekt.html#a76de83c57d6539d180f228f5304bb543">CObiekt::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">Poczatkowa wspolrzedna X obiektu.</div><div class="ttdef"><b>Definition:</b> obiekt.h:36</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a0b36188dd01aea2ac65d239da7f61bfb"><div class="ttname"><a href="class_c_wojownik.html#a0b36188dd01aea2ac65d239da7f61bfb">CWojownik::przyjmijObrazenia</a></div><div class="ttdeci">virtual void przyjmijObrazenia(int liczbaObrazen)=0</div><div class="ttdoc">//Wirtualna funkcja odpowiadajaca za zadawanie obrazen wojownikowi (np. po dostaniu atakiem)</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_ac4166b14903fda1ce12da7403d37fe35"><div class="ttname"><a href="class_c_wojownik.html#ac4166b14903fda1ce12da7403d37fe35">CWojownik::szybkosc</a></div><div class="ttdeci">int szybkosc</div><div class="ttdoc">Szybkosc, z jaka wojownik porusza sie po planszy.</div><div class="ttdef"><b>Definition:</b> obiekt.h:97</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a063b5405e6c5ea4cb7c91ad53d031e50"><div class="ttname"><a href="class_c_wojownik.html#a063b5405e6c5ea4cb7c91ad53d031e50">CWojownik::sila</a></div><div class="ttdeci">int sila</div><div class="ttdoc">Ilosc obrazen, jakie sa zadawane atakami (wartosci moga byc dzielone lub mnozone w zaleznosci od atak...</div><div class="ttdef"><b>Definition:</b> obiekt.h:99</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_abed3990a3e660651ebc8cee795f9489a"><div class="ttname"><a href="class_c_wojownik.html#abed3990a3e660651ebc8cee795f9489a">CWojownik::update</a></div><div class="ttdeci">virtual void update(const sf::RenderTarget *okno, std::vector&lt; CObiekt * &gt; obiekty)=0</div><div class="ttdoc">Funkcja odpowiadajaca za samodzielne zachowywanie sie wojownika.</div></div>
+<div class="ttc" id="aclass_c_wojownik_html_a4b1707fb8dd49444c79215d471928509"><div class="ttname"><a href="class_c_wojownik.html#a4b1707fb8dd49444c79215d471928509">CWojownik::cooldownAtakuSpecjalnego</a></div><div class="ttdeci">int cooldownAtakuSpecjalnego</div><div class="ttdoc">Ilosc czasu jaka trzeba odczekac pomiedzy atakami specjalnymi.</div><div class="ttdef"><b>Definition:</b> obiekt.h:90</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
